@@ -606,8 +606,8 @@
     "question": "A company has an employee database, and they need to prevent duplicate Employee IDs. Which constraint should they use?",
     "choices": {
       "A": { "choice": "NOT NULL" },
-      "B": { "choice": "UNIQUE", "isCorrect": true },
-      "C": { "choice": "PRIMARY KEY" },
+      "B": { "choice": "UNIQUE" },
+      "C": { "choice": "PRIMARY KEY", "isCorrect": true },
       "D": { "choice": "CHECK" }
     }
   },
@@ -731,8 +731,8 @@
   "05_082": {
     "question": "Given a database with CUSTOMER and ORDER tables, which SQL query retrieves customer names and their total order amounts?",
     "choices": {
-      "A": { "choice": "SELECT CUS_NAME, SUM(ORDER_TOTAL) FROM CUSTOMER JOIN ORDER USING (CUS_ID) GROUP BY CUS_NAME;", "isCorrect": true },
-      "B": { "choice": "SELECT CUS_NAME, SUM(ORDER_TOTAL) FROM CUSTOMER LEFT JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID GROUP BY CUS_NAME;" },
+      "A": { "choice": "SELECT CUS_NAME, SUM(ORDER_TOTAL) FROM CUSTOMER JOIN ORDER USING (CUS_ID) GROUP BY CUS_NAME;" },
+      "B": { "choice": "SELECT CUS_NAME, SUM(ORDER_TOTAL) FROM CUSTOMER LEFT JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID GROUP BY CUS_NAME;", "isCorrect": true },
       "C": { "choice": "SELECT CUS_NAME, ORDER_TOTAL FROM CUSTOMER INNER JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID;" },
       "D": { "choice": "SELECT CUS_NAME, COUNT(ORDER_ID) FROM CUSTOMER LEFT JOIN ORDER USING (CUS_ID);" }
     }
