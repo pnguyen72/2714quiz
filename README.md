@@ -2,7 +2,7 @@
 
 <https://sequel.comp1712.ca>
 
-<small>_Get it?_ &nbsp;COMP 1712's sequel ... SQL 👀</small>
+<sub> _Get it?_ COMP 1712's sequel ... SQL 👀 </sub>
 
 A fork of the [COMP 1712 quiz](https://github.com/pnguyen72/1712quiz).
 
