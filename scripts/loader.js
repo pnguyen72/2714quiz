@@ -16,7 +16,7 @@ function loadFirebase() {
     .then(([_, firestoreSrc]) => eval?.(firestoreSrc))
     .then(() => {
       firebase.initializeApp(firebaseConfig);
-      db = firebase.firestore().collection("1712");
+      db = firebase.firestore().collection("2714");
     });
 }
 

@@ -1,301 +1,911 @@
 {
-  "05_01": {
-    "question": "These display decision logic (IF statements) as a set of nodes (questions) and branches (answers).",
+  "05_001": {
+    "question": "What is the primary function of a Database Management System (DBMS)?",
     "choices": {
-      "A_05_01": { "choice": "Logic diagrams" },
-      "B_05_01": { "choice": "If-then-else diagrams" },
-      "C_05_01": { "choice": "Decision trees", "isCorrect": true },
-      "D_05_01": { "choice": "Process diagrams" },
-      "E_05_01": { "choice": "Decision diagrams" }
+      "A": { "choice": "To store data only" },
+      "B": { "choice": "To process transactions only" },
+      "C": { "choice": "To define, construct, manipulate, and maintain databases", "isCorrect": true },
+      "D": { "choice": "To serve as a programming language" }
     }
   },
-  "05_02": {
-    "question": "A bundle is an activity or a function that is performed for some specific business reason.",
+  "05_002": {
+    "question": "Which of the following is NOT a function of DBMS?",
     "choices": {
-      "A_05_02": { "choice": "True" },
-      "B_05_02": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "It's a process. \"Bundle\" is not a thing."
-  },
-  "05_03": {
-    "question": "A single fact, such as Order ID (sometimes called a data element), or a logical collection of several facts (e.g., new shop work order).",
-    "choices": {
-      "A_05_03": { "choice": "Database" },
-      "B_05_03": { "choice": "Data store" },
-      "C_05_03": { "choice": "Data file" },
-      "D_05_03": { "choice": "Data flow", "isCorrect": true }
-    },
-    "multiSelect": true
-  },
-  "05_04": {
-    "question": "An external entity is a person, organization, organization unit, or system that is external to the system and never interacts with it.",
-    "choices": {
-      "A_05_04": { "choice": "True" },
-      "B_05_04": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "It's not true that an external entity never interacts with the system."
-  },
-  "05_05": {
-    "question": "All data stores must have at least one input data flow.",
-    "choices": {
-      "A_05_05": { "choice": "True", "isCorrect": true },
-      "B_05_05": { "choice": "False" }
+      "A": { "choice": "Query processing" },
+      "B": { "choice": "File system management", "isCorrect": true },
+      "C": { "choice": "Security enforcement" },
+      "D": { "choice": "Multi-user access control" }
     }
   },
-  "05_06": {
-    "question": "Use cases contain all the information needed to build one part of a process model.",
+  "05_003": {
+    "question": "What is metadata in a database?",
     "choices": {
-      "A_05_06": { "choice": "True" },
-      "B_05_06": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "Use case only shows what the process looks like from the outside. It doesn't tell you how things work inside."
-  },
-  "05_07": {
-    "question": "Processes must be computerized.",
-    "choices": {
-      "A_05_07": { "choice": "True" },
-      "B_05_07": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "Processes can either be conputerized or manual."
-  },
-  "05_08": {
-    "question": "Process models have just recently become a part of structured systems analysis and design techniques.",
-    "choices": {
-      "A_05_08": { "choice": "True" },
-      "B_05_08": { "choice": "False", "isCorrect": true }
+      "A": { "choice": "Data stored inside tables" },
+      "B": { "choice": "Data that describes other data", "isCorrect": true },
+      "C": { "choice": "Large datasets in a database" },
+      "D": { "choice": "Primary key information" }
     }
   },
-  "05_09": {
-    "question": "Experienced analysts usually draw a DFD perfectly the first time.",
+  "05_004": {
+    "question": "What ensures that database transactions are processed reliably and correctly?",
     "choices": {
-      "A_05_09": { "choice": "True" },
-      "B_05_09": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "Creating DFDs is an iterative process."
-  },
-  "05_10": {
-    "question": "Models which provide information that is needed to ultimately build the system.",
-    "choices": {
-      "A_05_10": { "choice": "Physical models", "isCorrect": true },
-      "B_05_10": { "choice": "Logical process models" },
-      "C_05_10": { "choice": "Design models" },
-      "D_05_10": { "choice": "Physical process models" }
-    },
-    "multiSelect": true
-  },
-  "05_11": {
-    "question": "These represent complex policy decisions as rules that link various conditions with actions.",
-    "choices": {
-      "A_05_11": { "choice": "Decision tables", "isCorrect": true },
-      "B_05_11": { "choice": "If-then-else diagrams" },
-      "C_05_11": { "choice": "Branching tables" },
-      "D_05_11": { "choice": "Process diagrams" },
-      "E_05_11": { "choice": "Decision diagrams" }
+      "A": { "choice": "Query optimization" },
+      "B": { "choice": "Concurrency control", "isCorrect": true },
+      "C": { "choice": "Data redundancy" },
+      "D": { "choice": "Data abstraction" }
     }
   },
-  "05_12": {
-    "question": "Data flows coming out of a data store indicate that information is retrieved from the data store.",
+  "05_005": {
+    "question": "Which database model was introduced by Edgar F. Codd in 1970?",
     "choices": {
-      "A_05_12": { "choice": "True", "isCorrect": true },
-      "B_05_12": { "choice": "False" }
+      "A": { "choice": "Hierarchical model" },
+      "B": { "choice": "Network model" },
+      "C": { "choice": "Relational model", "isCorrect": true },
+      "D": { "choice": "Object-oriented model" }
     }
   },
-  "05_13": {
-    "question": "There are two fundamentally different types of problems that can occur in DFDs: syntax errors and English errors.",
+  "05_006": {
+    "question": "Which of the following best describes Online Transaction Processing (OLTP)?",
     "choices": {
-      "A_05_13": { "choice": "True" },
-      "B_05_13": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "It's syntax errors and semantic errors. \"English errors\" is not a thing."
-  },
-  "05_14": {
-    "question": "Data flows going into a data store indicate that there is a logical error.",
-    "choices": {
-      "A_05_14": { "choice": "True" },
-      "B_05_14": { "choice": "False", "isCorrect": true }
+      "A": { "choice": "It is used for data analysis and reporting" },
+      "B": { "choice": "It is optimized for handling a large number of transactions", "isCorrect": true },
+      "C": { "choice": "It is a backup system for databases" },
+      "D": { "choice": "It does not support concurrent transactions" }
     }
   },
-  "05_15": {
-    "question": "Semantics errors cause the fewest problems in system development.",
+  "05_007": {
+    "question": "A bank needs to process thousands of transactions per second while maintaining accuracy and security. Which type of database system should they use?",
     "choices": {
-      "A_05_15": { "choice": "True" },
-      "B_05_15": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "There are 2 types of error:<br>- Syntax error: the program doesn't run<br>- Semantic error:  the program runs but gives the wrong result<br>The latter is much harder to fix."
-  },
-  "05_16": {
-    "question": "Below the top-level DFD in the DFD hierarchy is the diagram called the what?",
-    "choices": {
-      "A_05_16": { "choice": "Level-1 DFD" },
-      "B_05_16": { "choice": "Main DFD" },
-      "C_05_16": { "choice": "Balancer" },
-      "D_05_16": { "choice": "Major DFD" },
-      "E_05_16": { "choice": "Level-0 DFD", "isCorrect": true }
-    },
-    "explanation": "The top-level DFD is the context diagram, below it is level-0."
-  },
-  "05_17": {
-    "question": "A collection of data that is stored in some way (which is determined later when creating the physical model).",
-    "choices": {
-      "A_05_17": { "choice": "Database" },
-      "B_05_17": { "choice": "Data flow" },
-      "C_05_17": { "choice": "Data store", "isCorrect": true },
-      "D_05_17": { "choice": "Data file" }
-    },
-    "multiSelect": true
-  },
-  "05_18": {
-    "question": "Synchronizing means ensuring that all information presented in a DFD at one level is accurately represented in the next-level",
-    "choices": {
-      "A_05_18": { "choice": "True" },
-      "B_05_18": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "It's called balancing. \"Synchronizing\" is not a thing."
-  },
-  "05_19": {
-    "question": "This type of English uses short sentences to describe the work that a process performs.",
-    "choices": {
-      "A_05_19": { "choice": "Simplified" },
-      "B_05_19": { "choice": "Process" },
-      "C_05_19": { "choice": "Minimal" },
-      "D_05_19": { "choice": "If-then-else" },
-      "E_05_19": { "choice": "Structured", "isCorrect": true }
+      "A": { "choice": "Object-oriented database" },
+      "B": { "choice": "Data warehouse" },
+      "C": { "choice": "OLTP system", "isCorrect": true },
+      "D": { "choice": "Multimedia database" }
     }
   },
-  "05_20": {
-    "question": "The next level under level 1 would be labeled as level 2.",
+  "05_008": {
+    "question": "A travel company needs to analyze customer behavior based on years of booking data. Which type of database should they use?",
     "choices": {
-      "A_05_20": { "choice": "True", "isCorrect": true },
-      "B_05_20": { "choice": "False" }
+      "A": { "choice": "OLTP" },
+      "B": { "choice": "GIS" },
+      "C": { "choice": "Data warehouse", "isCorrect": true },
+      "D": { "choice": "Multimedia database" }
     }
   },
-  "05_21": {
-    "question": "It is important to ensure that the level 0 and level 1 DFDs are balanced.",
+  "05_009": {
+    "question": "A social media platform needs to store images and videos uploaded by users. Which type of database is best suited for this purpose?",
     "choices": {
-      "A_05_21": { "choice": "True", "isCorrect": true },
-      "B_05_21": { "choice": "False" }
+      "A": { "choice": "Multimedia database", "isCorrect": true },
+      "B": { "choice": "Numeric database" },
+      "C": { "choice": "OLTP system" },
+      "D": { "choice": "GIS database" }
     }
   },
-  "05_22": {
-    "question": "Use cases are the same as process diagrams.",
+  "05_010": {
+    "question": "A logistics company needs to track real-time locations of delivery trucks. Which database system should they use?",
     "choices": {
-      "A_05_22": { "choice": "True" },
-      "B_05_22": { "choice": "False", "isCorrect": true }
+      "A": { "choice": "GIS database", "isCorrect": true },
+      "B": { "choice": "Data warehouse" },
+      "C": { "choice": "OLTP system" },
+      "D": { "choice": "Object-oriented database" }
     }
   },
-  "05_23": {
-    "question": "The context diagram shows the entire system in context with its environment.",
+  "05_011": {
+    "question": "Which SQL clause is used to filter the results of a query?",
     "choices": {
-      "A_05_23": { "choice": "True", "isCorrect": true },
-      "B_05_23": { "choice": "False" }
+      "A": { "choice": "SELECT" },
+      "B": { "choice": "WHERE", "isCorrect": true },
+      "C": { "choice": "ORDER BY" },
+      "D": { "choice": "GROUP BY" }
     }
   },
-  "05_24": {
-    "question": "In general, syntax errors are easier to find and fix than are semantics errors.",
+  "05_012": {
+    "question": "What SQL command is used to remove all records from a table without deleting the table itself?",
     "choices": {
-      "A_05_24": { "choice": "True", "isCorrect": true },
-      "B_05_24": { "choice": "False" }
+      "A": { "choice": "DELETE" },
+      "B": { "choice": "DROP" },
+      "C": { "choice": "TRUNCATE", "isCorrect": true },
+      "D": { "choice": "ALTER" }
     }
   },
-  "05_25": {
-    "question": "We use data flow diagrams (DFDs) to describe the to-be system's interactions with its environment, processes, flows of data, and data stores.",
+  "05_013": {
+    "question": "Which SQL statement is used to insert new data into a table?",
     "choices": {
-      "A_05_25": { "choice": "True", "isCorrect": true },
-      "B_05_25": { "choice": "False" }
+      "A": { "choice": "INSERT INTO", "isCorrect": true },
+      "B": { "choice": "UPDATE" },
+      "C": { "choice": "DELETE" },
+      "D": { "choice": "ALTER TABLE" }
     }
   },
-  "05_26": {
-    "question": "The top-level DFD in every business process model, whether a manual system or a computerized system, is the what?",
+  "05_014": {
+    "question": "What keyword in SQL is used to retrieve distinct values from a column?",
     "choices": {
-      "A_05_26": { "choice": "Driver" },
-      "B_05_26": { "choice": "Context diagram", "isCorrect": true },
-      "C_05_26": { "choice": "Level-0 DFD" },
-      "D_05_26": { "choice": "Main DFD" },
-      "E_05_26": { "choice": "Major DFD" }
+      "A": { "choice": "UNIQUE" },
+      "B": { "choice": "DISTINCT", "isCorrect": true },
+      "C": { "choice": "FILTER" },
+      "D": { "choice": "DISTINCT VALUES" }
     }
   },
-  "05_27": {
-    "question": "Iteration is the cornerstone of good DFD design.",
+  "05_015": {
+    "question": "Which SQL command is used to modify existing records in a table?",
     "choices": {
-      "A_05_27": { "choice": "True", "isCorrect": true },
-      "B_05_27": { "choice": "False" }
+      "A": { "choice": "UPDATE", "isCorrect": true },
+      "B": { "choice": "MODIFY" },
+      "C": { "choice": "CHANGE" },
+      "D": { "choice": "ALTER" }
     }
   },
-  "05_28": {
-    "question": "Most business processes can be explained in one DFD.",
+  "05_016": {
+    "question": "Which of the following SQL statements is used to create a new table?",
     "choices": {
-      "A_05_28": { "choice": "True" },
-      "B_05_28": { "choice": "False", "isCorrect": true }
-    },
-    "explanation": "Most processes have one top-level DFD, but then it's broken down to multiple lower-level DFDs, each explains a subprocess."
-  },
-  "05_29": {
-    "question": "The context diagram defines how the business process or computer system interacts with its Environment.",
-    "choices": {
-      "A_05_29": { "choice": "True", "isCorrect": true },
-      "B_05_29": { "choice": "False" }
+      "A": { "choice": "CREATE TABLE", "isCorrect": true },
+      "B": { "choice": "ADD TABLE" },
+      "C": { "choice": "NEW TABLE" },
+      "D": { "choice": "MAKE TABLE" }
     }
   },
-  "05_30": {
-    "question": "Process models rarely have level 1 diagrams.",
+  "05_017": {
+    "question": "What is the purpose of the GROUP BY clause in SQL?",
     "choices": {
-      "A_05_30": { "choice": "True" },
-      "B_05_30": { "choice": "False", "isCorrect": true }
+      "A": { "choice": "To sort data" },
+      "B": { "choice": "To filter rows" },
+      "C": { "choice": "To aggregate data", "isCorrect": true },
+      "D": { "choice": "To delete data" }
     }
   },
-  "05_31": {
-    "question": "The processes in the level 1 diagram are the _____ of the _____ process in the level 0 diagram.",
+  "05_018": {
+    "question": "What is a foreign key used for in a relational database?",
     "choices": {
-      "A_05_31": { "choice": "Leaders, Followers" },
-      "B_05_31": { "choice": "Balancers, Main" },
-      "C_05_31": { "choice": "Children, Parent", "isCorrect": true },
-      "D_05_31": { "choice": "Followers, Leaders" },
-      "E_05_31": { "choice": "Parent, Children" }
+      "A": { "choice": "To uniquely identify each record" },
+      "B": { "choice": "To establish a relationship between tables", "isCorrect": true },
+      "C": { "choice": "To store large objects" },
+      "D": { "choice": "To define data types" }
     }
   },
-  "05_32": {
-    "question": "There are no formal rules covering the layout of processes, data flows, data stores, and external entities within a DFD.",
+  "05_019": {
+    "question": "What is the primary purpose of data modeling?",
     "choices": {
-      "A_05_32": { "choice": "True", "isCorrect": true },
-      "B_05_32": { "choice": "False" }
+      "A": { "choice": "To design user interfaces" },
+      "B": { "choice": "To create a visual representation of data structures", "isCorrect": true },
+      "C": { "choice": "To program database applications" },
+      "D": { "choice": "To secure data in a system" }
     }
   },
-  "05_33": {
-    "question": "Every external entity has a name and a description.",
+  "05_020": {
+    "question": "Which level of data modeling provides a high-level overview of the database structure?",
     "choices": {
-      "A_05_33": { "choice": "True", "isCorrect": true },
-      "B_05_33": { "choice": "False" }
+      "A": { "choice": "Conceptual model", "isCorrect": true },
+      "B": { "choice": "Logical model" },
+      "C": { "choice": "Physical model" },
+      "D": { "choice": "Implementation model" }
     }
   },
-  "05_34": {
-    "question": "Process descriptions provide additional information that the DFD does not provide.",
+  "05_021": {
+    "question": "What is the primary role of data models in an organization?",
     "choices": {
-      "A_05_34": { "choice": "True", "isCorrect": true },
-      "B_05_34": { "choice": "False" }
+      "A": { "choice": "To facilitate communication between stakeholders", "isCorrect": true },
+      "B": { "choice": "To store raw data efficiently" },
+      "C": { "choice": "To implement business logic in applications" },
+      "D": { "choice": "To secure data transactions" }
     }
   },
-  "05_35": {
-    "question": "The set of children and the parent are identical; they are simply different ways of looking at the same thing.",
+  "05_022": {
+    "question": "In an ER diagram, what does a rectangle represent?",
     "choices": {
-      "A_05_35": { "choice": "True", "isCorrect": true },
-      "B_05_35": { "choice": "False" }
+      "A": { "choice": "An attribute" },
+      "B": { "choice": "A relationship" },
+      "C": { "choice": "An entity", "isCorrect": true },
+      "D": { "choice": "A constraint" }
     }
   },
-  "05_36": {
-    "question": "Models that describe processes, without suggesting how they are conducted.",
+  "05_023": {
+    "question": "What is an entity in data modeling?",
     "choices": {
-      "A_05_36": { "choice": "Logical process models", "isCorrect": true },
-      "B_05_36": { "choice": "Physical process models" },
-      "C_05_36": { "choice": "Design models" },
-      "D_05_36": { "choice": "Physical models" }
-    },
-    "multiSelect": true
+      "A": { "choice": "A physical database table" },
+      "B": { "choice": "A real-world object or concept", "isCorrect": true },
+      "C": { "choice": "A function in a database system" },
+      "D": { "choice": "A type of data constraint" }
+    }
   },
-  "05_37": {
-    "question": "Project teams usually draw process models by hand.",
+  "05_024": {
+    "question": "What is the main purpose of a primary key?",
     "choices": {
-      "A_05_37": { "choice": "True" },
-      "B_05_37": { "choice": "False", "isCorrect": true }
+      "A": { "choice": "To enforce referential integrity" },
+      "B": { "choice": "To uniquely identify each record in a table", "isCorrect": true },
+      "C": { "choice": "To improve database performance" },
+      "D": { "choice": "To allow NULL values in a table" }
+    }
+  },
+  "05_025": {
+    "question": "Which type of database relationship is the most common?",
+    "choices": {
+      "A": { "choice": "One-to-One (1:1)" },
+      "B": { "choice": "One-to-Many (1:M)", "isCorrect": true },
+      "C": { "choice": "Many-to-Many (M:N)" },
+      "D": { "choice": "Recursive relationship" }
+    }
+  },
+  "05_026": {
+    "question": "What is the main challenge with Many-to-Many relationships in relational databases?",
+    "choices": {
+      "A": { "choice": "They require additional storage" },
+      "B": { "choice": "They cannot be represented in SQL" },
+      "C": { "choice": "They must be broken down into two One-to-Many relationships", "isCorrect": true },
+      "D": { "choice": "They are not used in practical applications" }
+    }
+  },
+  "05_027": {
+    "question": "What is the main advantage of using a well-designed data model?",
+    "choices": {
+      "A": { "choice": "Faster application development", "isCorrect": true },
+      "B": { "choice": "Lower hardware requirements" },
+      "C": { "choice": "Reduced network latency" },
+      "D": { "choice": "Eliminates all security risks" }
+    }
+  },
+  "05_028": {
+    "question": "What is the purpose of an ERD?",
+    "choices": {
+      "A": { "choice": "To implement SQL queries" },
+      "B": { "choice": "To visually represent entities and relationships", "isCorrect": true },
+      "C": { "choice": "To generate data reports" },
+      "D": { "choice": "To create stored procedures" }
+    }
+  },
+  "05_029": {
+    "question": "What is an example of a business rule?",
+    "choices": {
+      "A": { "choice": "A customer may place multiple orders.", "isCorrect": true },
+      "B": { "choice": "An index should be created on the primary key." },
+      "C": { "choice": "The database should have a backup policy." },
+      "D": { "choice": "Each table must have a unique name." }
+    }
+  },
+  "05_030": {
+    "question": "What is a domain in the relational model?",
+    "choices": {
+      "A": { "choice": "A range of permissible values for an attribute", "isCorrect": true },
+      "B": { "choice": "A database security constraint" },
+      "C": { "choice": "A set of linked tables" },
+      "D": { "choice": "A type of SQL function" }
+    }
+  },
+  "05_031": {
+    "question": "What is a superkey?",
+    "choices": {
+      "A": { "choice": "A key that is always indexed" },
+      "B": { "choice": "A set of attributes that uniquely identifies a tuple", "isCorrect": true },
+      "C": { "choice": "A foreign key referencing multiple tables" },
+      "D": { "choice": "A key that is used for encryption" }
+    }
+  },
+  "05_032": {
+    "question": "What is the primary difference between a logical data model and a physical data model?",
+    "choices": {
+      "A": { "choice": "Logical models define business rules, while physical models define database storage structures", "isCorrect": true },
+      "B": { "choice": "Logical models use SQL, while physical models do not" },
+      "C": { "choice": "Logical models are platform-specific, while physical models are independent" },
+      "D": { "choice": "Logical models contain data, while physical models do not" }
+    }
+  },
+  "05_033": {
+    "question": "What is an index in a database used for?",
+    "choices": {
+      "A": { "choice": "To increase storage requirements" },
+      "B": { "choice": "To improve query performance", "isCorrect": true },
+      "C": { "choice": "To enforce foreign key constraints" },
+      "D": { "choice": "To store backup copies of data" }
+    }
+  },
+  "05_034": {
+    "question": "In a relational model, what is a tuple?",
+    "choices": {
+      "A": { "choice": "A column in a table" },
+      "B": { "choice": "A row in a table", "isCorrect": true },
+      "C": { "choice": "A table relationship" },
+      "D": { "choice": "A database schema" }
+    }
+  },
+  "05_035": {
+    "question": "An e-commerce store needs to retrieve customer details along with their order history efficiently. Which type of SQL query should they use?",
+    "choices": {
+      "A": { "choice": "INNER JOIN", "isCorrect": true },
+      "B": { "choice": "UNION" },
+      "C": { "choice": "CROSS JOIN" },
+      "D": { "choice": "INTERSECT" }
+    }
+  },
+  "05_036": {
+    "question": "A database administrator needs to enforce uniqueness in a column but allow null values. What should they use?",
+    "choices": {
+      "A": { "choice": "Primary key" },
+      "B": { "choice": "Unique key", "isCorrect": true },
+      "C": { "choice": "Foreign key" },
+      "D": { "choice": "Composite key" }
+    }
+  },
+  "05_037": {
+    "question": "A business needs to store customer transactions and retrieve them in order of transaction amount. Which indexing method is most suitable?",
+    "choices": {
+      "A": { "choice": "Hash indexing" },
+      "B": { "choice": "B-tree indexing", "isCorrect": true },
+      "C": { "choice": "Bitmap indexing" },
+      "D": { "choice": "Clustered indexing" }
+    }
+  },
+  "05_038": {
+    "question": "Which SQL function is used to count the number of rows in a table?",
+    "choices": {
+      "A": { "choice": "SUM()" },
+      "B": { "choice": "COUNT()", "isCorrect": true },
+      "C": { "choice": "AVG()" },
+      "D": { "choice": "GROUP()" }
+    }
+  },
+  "05_039": {
+    "question": "How do you retrieve all columns from a table in SQL?",
+    "choices": {
+      "A": { "choice": "SELECT * FROM table_name", "isCorrect": true },
+      "B": { "choice": "GET ALL FROM table_name" },
+      "C": { "choice": "FETCH * FROM table_name" },
+      "D": { "choice": "LIST * FROM table_name" }
+    }
+  },
+  "05_040": {
+    "question": "What SQL clause is used to filter records based on a condition?",
+    "choices": {
+      "A": { "choice": "GROUP BY" },
+      "B": { "choice": "WHERE", "isCorrect": true },
+      "C": { "choice": "ORDER BY" },
+      "D": { "choice": "LIMIT" }
+    }
+  },
+  "05_041": {
+    "question": "Which SQL operator is used to retrieve records that match at least one condition from multiple conditions?",
+    "choices": {
+      "A": { "choice": "AND" },
+      "B": { "choice": "OR", "isCorrect": true },
+      "C": { "choice": "NOT" },
+      "D": { "choice": "LIKE" }
+    }
+  },
+  "05_042": {
+    "question": "What SQL clause is used to sort query results?",
+    "choices": {
+      "A": { "choice": "SORT BY" },
+      "B": { "choice": "ORDER BY", "isCorrect": true },
+      "C": { "choice": "GROUP BY" },
+      "D": { "choice": "FILTER" }
+    }
+  },
+  "05_043": {
+    "question": "How do you remove all records from a table without deleting the table itself?",
+    "choices": {
+      "A": { "choice": "DELETE FROM table_name" },
+      "B": { "choice": "TRUNCATE TABLE table_name", "isCorrect": true },
+      "C": { "choice": "DROP TABLE table_name" },
+      "D": { "choice": "REMOVE FROM table_name" }
+    }
+  },
+  "05_044": {
+    "question": "What SQL statement is used to add a new column to a table?",
+    "choices": {
+      "A": { "choice": "ALTER TABLE table_name ADD column_name datatype", "isCorrect": true },
+      "B": { "choice": "UPDATE TABLE table_name ADD column_name datatype" },
+      "C": { "choice": "ADD COLUMN table_name column_name datatype" },
+      "D": { "choice": "INSERT COLUMN table_name column_name datatype" }
+    }
+  },
+  "05_045": {
+    "question": "What is the purpose of the GROUP BY clause in SQL?",
+    "choices": {
+      "A": { "choice": "To group rows with the same values for aggregate functions", "isCorrect": true },
+      "B": { "choice": "To delete duplicate records" },
+      "C": { "choice": "To sort results alphabetically" },
+      "D": { "choice": "To filter records based on a condition" }
+    }
+  },
+  "05_046": {
+    "question": "What does SQL stand for?",
+    "choices": {
+      "A": { "choice": "Structured Query Language", "isCorrect": true },
+      "B": { "choice": "Standard Query Logic" },
+      "C": { "choice": "Sequential Query Language" },
+      "D": { "choice": "Simple Query Language" }
+    }
+  },
+  "05_047": {
+    "question": "Which SQL category is used to define and modify database structures?",
+    "choices": {
+      "A": { "choice": "DML (Data Manipulation Language)" },
+      "B": { "choice": "DDL (Data Definition Language)", "isCorrect": true },
+      "C": { "choice": "TCL (Transaction Control Language)" },
+      "D": { "choice": "DCL (Data Control Language)" }
+    }
+  },
+  "05_048": {
+    "question": "Which of the following is a DML command?",
+    "choices": {
+      "A": { "choice": "CREATE" },
+      "B": { "choice": "ALTER" },
+      "C": { "choice": "INSERT", "isCorrect": true },
+      "D": { "choice": "DROP" }
+    }
+  },
+  "05_049": {
+    "question": "Which data type is best for storing a precise monetary value?",
+    "choices": {
+      "A": { "choice": "INT" },
+      "B": { "choice": "FLOAT" },
+      "C": { "choice": "DECIMAL", "isCorrect": true },
+      "D": { "choice": "VARCHAR" }
+    }
+  },
+  "05_050": {
+    "question": "Which of the following is a correct SQL statement for creating a table?",
+    "choices": {
+      "A": { "choice": "CREATE TABLE name (id INT, name STRING);" },
+      "B": { "choice": "CREATE DATABASE TABLE name (id INT, name TEXT);" },
+      "C": { "choice": "CREATE name TABLE (id INTEGER, name VARCHAR(50));" },
+      "D": { "choice": "CREATE TABLE employees (id INT, name VARCHAR(50));", "isCorrect": true }
+    }
+  },
+  "05_051": {
+    "question": "What is the primary function of a FOREIGN KEY?",
+    "choices": {
+      "A": { "choice": "To ensure uniqueness within a table" },
+      "B": { "choice": "To create a relationship between two tables", "isCorrect": true },
+      "C": { "choice": "To speed up data retrieval" },
+      "D": { "choice": "To enforce constraints on data values" }
+    }
+  },
+  "05_052": {
+    "question": "What will the following query return? SELECT * FROM employees WHERE salary > 50000;",
+    "choices": {
+      "A": { "choice": "Employees earning exactly $50,000" },
+      "B": { "choice": "Employees earning more than $50,000", "isCorrect": true },
+      "C": { "choice": "Employees earning less than $50,000" },
+      "D": { "choice": "All employees in the table" }
+    }
+  },
+  "05_053": {
+    "question": "A retail store wants to find all products with a price between $100 and $500. What SQL operator should they use?",
+    "choices": {
+      "A": { "choice": "IN" },
+      "B": { "choice": "BETWEEN", "isCorrect": true },
+      "C": { "choice": "LIKE" },
+      "D": { "choice": "EXISTS" }
+    }
+  },
+  "05_054": {
+    "question": "A HR system needs to store employee job titles where only predefined values are allowed. Which data type should they use?",
+    "choices": {
+      "A": { "choice": "VARCHAR" },
+      "B": { "choice": "ENUM", "isCorrect": true },
+      "C": { "choice": "TEXT" },
+      "D": { "choice": "INT" }
+    }
+  },
+  "05_055": {
+    "question": "A database administrator wants to find out how many employees exist in the database. Which function should they use?",
+    "choices": {
+      "A": { "choice": "SUM()" },
+      "B": { "choice": "COUNT()", "isCorrect": true },
+      "C": { "choice": "AVG()" },
+      "D": { "choice": "MAX()" }
+    }
+  },
+  "05_056": {
+    "question": "Which SQL clause is used to sort results in descending order?",
+    "choices": {
+      "A": { "choice": "GROUP BY" },
+      "B": { "choice": "ORDER BY DESC", "isCorrect": true },
+      "C": { "choice": "SORT BY" },
+      "D": { "choice": "FILTER" }
+    }
+  },
+  "05_057": {
+    "question": "What is the correct syntax for renaming a column in a query result?",
+    "choices": {
+      "A": { "choice": "SELECT column_name RENAME new_name FROM table_name;" },
+      "B": { "choice": "SELECT column_name AS new_name FROM table_name;", "isCorrect": true },
+      "C": { "choice": "CHANGE column_name TO new_name FROM table_name;" },
+      "D": { "choice": "ALTER COLUMN column_name TO new_name;" }
+    }
+  },
+  "05_058": {
+    "question": "What is the result of the following query? SELECT 10 + 5;",
+    "choices": {
+      "A": { "choice": "15", "isCorrect": true },
+      "B": { "choice": "105" },
+      "C": { "choice": "10" },
+      "D": { "choice": "Error" }
+    }
+  },
+  "05_059": {
+    "question": "What does the following SQL query do? SELECT P_CODE, P_DESCRIPT, P_PRICE FROM PRODUCT ORDER BY P_PRICE DESC;",
+    "choices": {
+      "A": { "choice": "Sorts products by price in ascending order" },
+      "B": { "choice": "Sorts products by price in descending order", "isCorrect": true },
+      "C": { "choice": "Filters products with a price greater than 100" },
+      "D": { "choice": "Deletes products with a price greater than 100" }
+    }
+  },
+  "05_060": {
+    "question": "Which operator is used to find records matching at least one value in a list?",
+    "choices": {
+      "A": { "choice": "LIKE" },
+      "B": { "choice": "IN", "isCorrect": true },
+      "C": { "choice": "EXISTS" },
+      "D": { "choice": "AND" }
+    }
+  },
+  "05_061": {
+    "question": "Which SQL keyword is used to filter grouped results?",
+    "choices": {
+      "A": { "choice": "WHERE" },
+      "B": { "choice": "HAVING", "isCorrect": true },
+      "C": { "choice": "ORDER BY" },
+      "D": { "choice": "LIMIT" }
+    }
+  },
+  "05_062": {
+    "question": "What will happen if you divide a number by zero in SQL?",
+    "choices": {
+      "A": { "choice": "The query will return NULL" },
+      "B": { "choice": "The query will return an error", "isCorrect": true },
+      "C": { "choice": "The result will be 0" },
+      "D": { "choice": "The DBMS will crash" }
+    }
+  },
+  "05_063": {
+    "question": "What command is used to list all databases in MySQL?",
+    "choices": {
+      "A": { "choice": "LIST DATABASES" },
+      "B": { "choice": "SHOW DATABASES", "isCorrect": true },
+      "C": { "choice": "DISPLAY DATABASES" },
+      "D": { "choice": "GET DATABASES" }
+    }
+  },
+  "05_064": {
+    "question": "How do you create a new database named 'ecommerce'?",
+    "choices": {
+      "A": { "choice": "CREATE DATABASE ecommerce;", "isCorrect": true },
+      "B": { "choice": "NEW DATABASE ecommerce;" },
+      "C": { "choice": "MAKE DATABASE ecommerce;" },
+      "D": { "choice": "ADD DATABASE ecommerce;" }
+    }
+  },
+  "05_065": {
+    "question": "What happens if you drop a database using DROP DATABASE command?",
+    "choices": {
+      "A": { "choice": "Deletes the database permanently", "isCorrect": true },
+      "B": { "choice": "Moves the database to the recycle bin" },
+      "C": { "choice": "Backs up the database before deletion" },
+      "D": { "choice": "Deletes all records but keeps the structure" }
+    }
+  },
+  "05_066": {
+    "question": "Which SQL command is used to switch between databases?",
+    "choices": {
+      "A": { "choice": "CHANGE DATABASE database_name;" },
+      "B": { "choice": "SWITCH DATABASE database_name;" },
+      "C": { "choice": "USE database_name;", "isCorrect": true },
+      "D": { "choice": "SELECT DATABASE database_name;" }
+    }
+  },
+  "05_067": {
+    "question": "A retail company wants to store information about its customers and their orders. Which primary key would be suitable for the CUSTOMER table?",
+    "choices": {
+      "A": { "choice": "Customer Name" },
+      "B": { "choice": "Customer Email" },
+      "C": { "choice": "Customer_ID", "isCorrect": true },
+      "D": { "choice": "Customer Phone Number" }
+    }
+  },
+  "05_068": {
+    "question": "A company has an employee database, and they need to prevent duplicate Employee IDs. Which constraint should they use?",
+    "choices": {
+      "A": { "choice": "NOT NULL" },
+      "B": { "choice": "UNIQUE", "isCorrect": true },
+      "C": { "choice": "PRIMARY KEY" },
+      "D": { "choice": "CHECK" }
+    }
+  },
+  "05_069": {
+    "question": "A company needs to track complaints filed by customers and ensure every complaint is linked to a valid customer. What constraint should be applied to the CUSTOMER_ID column in the COMPLAINT table?",
+    "choices": {
+      "A": { "choice": "PRIMARY KEY" },
+      "B": { "choice": "UNIQUE" },
+      "C": { "choice": "FOREIGN KEY", "isCorrect": true },
+      "D": { "choice": "CHECK" }
+    }
+  },
+  "05_070": {
+    "question": "Which of the following commands will add a new column 'email' to the 'customer' table?",
+    "choices": {
+      "A": { "choice": "ALTER TABLE customer ADD COLUMN email VARCHAR(100);", "isCorrect": true },
+      "B": { "choice": "ADD COLUMN email TO customer VARCHAR(100);" },
+      "C": { "choice": "MODIFY TABLE customer ADD email VARCHAR(100);" },
+      "D": { "choice": "CHANGE TABLE customer ADD COLUMN email VARCHAR(100);" }
+    }
+  },
+  "05_071": {
+    "question": "A school database contains a column 'grade' that should only accept values between 0 and 100. Which constraint ensures this?",
+    "choices": {
+      "A": { "choice": "CHECK (grade BETWEEN 0 AND 100)", "isCorrect": true },
+      "B": { "choice": "UNIQUE" },
+      "C": { "choice": "FOREIGN KEY" },
+      "D": { "choice": "NOT NULL" }
+    }
+  },
+  "05_072": {
+    "question": "Which query retrieves all unique cities from a CUSTOMER table?",
+    "choices": {
+      "A": { "choice": "SELECT UNIQUE city FROM CUSTOMER;" },
+      "B": { "choice": "SELECT DISTINCT city FROM CUSTOMER;", "isCorrect": true },
+      "C": { "choice": "SELECT DIFFERENT city FROM CUSTOMER;" },
+      "D": { "choice": "SELECT DISTINCTIVE city FROM CUSTOMER;" }
+    }
+  },
+  "05_073": {
+    "question": "Which SQL function calculates the total value of all orders in the ORDER table?",
+    "choices": {
+      "A": { "choice": "COUNT(TOTAL_AMOUNT)" },
+      "B": { "choice": "SUM(TOTAL_AMOUNT)", "isCorrect": true },
+      "C": { "choice": "AVG(TOTAL_AMOUNT)" },
+      "D": { "choice": "MAX(TOTAL_AMOUNT)" }
+    }
+  },
+  "05_074": {
+    "question": "What does the ORDER BY clause do in SQL?",
+    "choices": {
+      "A": { "choice": "Filters data" },
+      "B": { "choice": "Sorts query results", "isCorrect": true },
+      "C": { "choice": "Deletes duplicate values" },
+      "D": { "choice": "Groups similar data" }
+    }
+  },
+  "05_075": {
+    "question": "Which SQL command modifies existing data in a table?",
+    "choices": {
+      "A": { "choice": "UPDATE", "isCorrect": true },
+      "B": { "choice": "ALTER" },
+      "C": { "choice": "INSERT" },
+      "D": { "choice": "DROP" }
+    }
+  },
+  "05_076": {
+    "question": "Which join type retrieves all records from the left table and only matching records from the right table?",
+    "choices": {
+      "A": { "choice": "INNER JOIN" },
+      "B": { "choice": "LEFT JOIN", "isCorrect": true },
+      "C": { "choice": "RIGHT JOIN" },
+      "D": { "choice": "FULL JOIN" }
+    }
+  },
+  "05_077": {
+    "question": "What does the GROUP BY clause do?",
+    "choices": {
+      "A": { "choice": "Filters results based on a condition" },
+      "B": { "choice": "Groups rows with similar values", "isCorrect": true },
+      "C": { "choice": "Sorts the output in ascending order" },
+      "D": { "choice": "Deletes rows from a table" }
+    }
+  },
+  "05_078": {
+    "question": "Given the tables EMPLOYEE and DEPARTMENT, which query retrieves all employees and their department names, including those without a department?",
+    "choices": {
+      "A": { "choice": "SELECT * FROM EMPLOYEE INNER JOIN DEPARTMENT ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;" },
+      "B": { "choice": "SELECT * FROM EMPLOYEE LEFT JOIN DEPARTMENT ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;", "isCorrect": true },
+      "C": { "choice": "SELECT * FROM EMPLOYEE RIGHT JOIN DEPARTMENT ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;" },
+      "D": { "choice": "SELECT * FROM EMPLOYEE FULL JOIN DEPARTMENT ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;" }
+    }
+  },
+  "05_079": {
+    "question": "What does the following SQL query do? SELECT E.EMP_NAME, D.DEPT_NAME FROM EMPLOYEE E RIGHT JOIN DEPARTMENT D ON E.DEPT_ID = D.DEPT_ID;",
+    "choices": {
+      "A": { "choice": "Retrieves only employees who have a department" },
+      "B": { "choice": "Retrieves all departments and their employees, including departments with no employees", "isCorrect": true },
+      "C": { "choice": "Retrieves all employees, even if they do not belong to a department" },
+      "D": { "choice": "Retrieves only departments with employees" }
+    }
+  },
+  "05_080": {
+    "question": "How do you retrieve customers who placed orders, including those who haven't?",
+    "choices": {
+      "A": { "choice": "SELECT CUS_NAME FROM CUSTOMER INNER JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID;" },
+      "B": { "choice": "SELECT CUS_NAME FROM CUSTOMER LEFT JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID;", "isCorrect": true },
+      "C": { "choice": "SELECT CUS_NAME FROM CUSTOMER RIGHT JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID;" },
+      "D": { "choice": "SELECT CUS_NAME FROM CUSTOMER FULL JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID;" }
+    }
+  },
+  "05_081": {
+    "question": "Which SQL join type retrieves all records from both tables, matching where possible, and filling NULLs where no match exists?",
+    "choices": {
+      "A": { "choice": "INNER JOIN" },
+      "B": { "choice": "LEFT JOIN" },
+      "C": { "choice": "RIGHT JOIN" },
+      "D": { "choice": "FULL OUTER JOIN", "isCorrect": true }
+    }
+  },
+  "05_082": {
+    "question": "Given a database with CUSTOMER and ORDER tables, which SQL query retrieves customer names and their total order amounts?",
+    "choices": {
+      "A": { "choice": "SELECT CUS_NAME, SUM(ORDER_TOTAL) FROM CUSTOMER JOIN ORDER USING (CUS_ID) GROUP BY CUS_NAME;", "isCorrect": true },
+      "B": { "choice": "SELECT CUS_NAME, SUM(ORDER_TOTAL) FROM CUSTOMER LEFT JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID GROUP BY CUS_NAME;" },
+      "C": { "choice": "SELECT CUS_NAME, ORDER_TOTAL FROM CUSTOMER INNER JOIN ORDER ON CUSTOMER.CUS_ID = ORDER.CUS_ID;" },
+      "D": { "choice": "SELECT CUS_NAME, COUNT(ORDER_ID) FROM CUSTOMER LEFT JOIN ORDER USING (CUS_ID);" }
+    }
+  },
+  "05_083": {
+    "question": "Which join is required to list all customers and their orders including those who never placed an order?",
+    "choices": {
+      "A": { "choice": "INNER JOIN" },
+      "B": { "choice": "LEFT JOIN", "isCorrect": true },
+      "C": { "choice": "RIGHT JOIN" },
+      "D": { "choice": "CROSS JOIN" }
+    }
+  },
+  "05_084": {
+    "question": "Which SQL join operation returns all possible combinations of records from two tables?",
+    "choices": {
+      "A": { "choice": "INNER JOIN" },
+      "B": { "choice": "LEFT JOIN" },
+      "C": { "choice": "RIGHT JOIN" },
+      "D": { "choice": "CROSS JOIN", "isCorrect": true }
+    }
+  },
+  "05_085": {
+    "question": "What is a function in SQL?",
+    "choices": {
+      "A": { "choice": "A stored set of SQL statements that perform a task and return a value", "isCorrect": true },
+      "B": { "choice": "A database table" },
+      "C": { "choice": "A SQL query that modifies data" },
+      "D": { "choice": "A procedure without arguments" }
+    }
+  },
+  "05_086": {
+    "question": "What does the following query return? SELECT UPPER('hello world');",
+    "choices": {
+      "A": { "choice": "hello world" },
+      "B": { "choice": "Hello World" },
+      "C": { "choice": "HELLO WORLD", "isCorrect": true },
+      "D": { "choice": "HeLLo WoRLd" }
+    }
+  },
+  "05_087": {
+    "question": "How do you retrieve the current date and time in MySQL?",
+    "choices": {
+      "A": { "choice": "SELECT CURRENT_DATE();" },
+      "B": { "choice": "SELECT NOW();", "isCorrect": true },
+      "C": { "choice": "SELECT DATE();" },
+      "D": { "choice": "SELECT TODAY();" }
+    }
+  },
+  "05_088": {
+    "question": "Which function is used to return the absolute value of a number?",
+    "choices": {
+      "A": { "choice": "ROUND()" },
+      "B": { "choice": "ABS()", "isCorrect": true },
+      "C": { "choice": "FLOOR()" },
+      "D": { "choice": "CEIL()" }
+    }
+  },
+  "05_089": {
+    "question": "What does the following SQL statement return? SELECT ROUND(3.14159, 2);",
+    "choices": {
+      "A": { "choice": "3" },
+      "B": { "choice": "3.14", "isCorrect": true },
+      "C": { "choice": "3.141" },
+      "D": { "choice": "3.142" }
+    }
+  },
+  "05_090": {
+    "question": "What will be the output of the following query? SELECT CONCAT('Hello', ' ', 'World');",
+    "choices": {
+      "A": { "choice": "HelloWorld" },
+      "B": { "choice": "Hello World", "isCorrect": true },
+      "C": { "choice": "Hello, World" },
+      "D": { "choice": "Error" }
+    }
+  },
+  "05_091": {
+    "question": "Which function is used to extract a portion of a string?",
+    "choices": {
+      "A": { "choice": "SLICE()" },
+      "B": { "choice": "SUBSTRING()", "isCorrect": true },
+      "C": { "choice": "PART()" },
+      "D": { "choice": "MID()" }
+    }
+  },
+  "05_092": {
+    "question": "How do you get the first three characters of a string in SQL? SELECT ___('database', 3);",
+    "choices": {
+      "A": { "choice": "LEFT()", "isCorrect": true },
+      "B": { "choice": "RIGHT()" },
+      "C": { "choice": "SUBSTRING()" },
+      "D": { "choice": "FIRST()" }
+    }
+  },
+  "05_093": {
+    "question": "What will be the output of the following query? SELECT FORMAT(1234567.89, 2);",
+    "choices": {
+      "A": { "choice": "1,234,567.89", "isCorrect": true },
+      "B": { "choice": "1234567.89" },
+      "C": { "choice": "1,234,567" },
+      "D": { "choice": "1234.56" }
+    }
+  },
+  "05_094": {
+    "question": "You need to find out how many days remain until New Year's Day 2026. Which function should you use?",
+    "choices": {
+      "A": { "choice": "TIMESTAMPDIFF()" },
+      "B": { "choice": "DATEDIFF()", "isCorrect": true },
+      "C": { "choice": "ADDDATE()" },
+      "D": { "choice": "CURDATE()" }
+    }
+  },
+  "05_095": {
+    "question": "Which function is used to convert a string into a date format?",
+    "choices": {
+      "A": { "choice": "STR_TO_DATE()", "isCorrect": true },
+      "B": { "choice": "DATE_FORMAT()" },
+      "C": { "choice": "CONVERT_DATE()" },
+      "D": { "choice": "CAST()" }
+    }
+  },
+  "05_096": {
+    "question": "How would you convert 90 degrees to radians in MySQL?",
+    "choices": {
+      "A": { "choice": "SELECT RADIANS(90);", "isCorrect": true },
+      "B": { "choice": "SELECT DEGREES(90);" },
+      "C": { "choice": "SELECT CONVERT(90, 'RADIANS');" },
+      "D": { "choice": "SELECT RAD(90);" }
+    }
+  },
+  "05_097": {
+    "question": "You want to retrieve the current time in 'HH:MM:SS' format. Which function should you use?",
+    "choices": {
+      "A": { "choice": "TIME()" },
+      "B": { "choice": "NOW()" },
+      "C": { "choice": "CURTIME()", "isCorrect": true },
+      "D": { "choice": "GET_TIME()" }
+    }
+  },
+  "05_098": {
+    "question": "What will be the result of the following query? SELECT MOD(17, 5);",
+    "choices": {
+      "A": { "choice": "2", "isCorrect": true },
+      "B": { "choice": "3" },
+      "C": { "choice": "1" },
+      "D": { "choice": "0" }
+    }
+  },
+  "05_099": {
+    "question": "Which function would you use to return the highest integer less than or equal to a given number?",
+    "choices": {
+      "A": { "choice": "FLOOR()", "isCorrect": true },
+      "B": { "choice": "CEIL()" },
+      "C": { "choice": "ROUND()" },
+      "D": { "choice": "TRUNCATE()" }
+    }
+  },
+  "05_100": {
+    "question": "What will be the result of the following SQL statement? SELECT TRIM(' SQL Query ');",
+    "choices": {
+      "A": { "choice": "' SQL Query'" },
+      "B": { "choice": "'SQL Query '" },
+      "C": { "choice": "'SQL Query'", "isCorrect": true },
+      "D": { "choice": "' SQL Query '" }
+    }
+  },
+  "05_101": {
+    "question": "Which function in MySQL is used to return the current database being used?",
+    "choices": {
+      "A": { "choice": "SELECT DATABASE();", "isCorrect": true },
+      "B": { "choice": "SHOW DATABASES();" },
+      "C": { "choice": "CURRENT_DATABASE();" },
+      "D": { "choice": "DB();" }
     }
   }
 }

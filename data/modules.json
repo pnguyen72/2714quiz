@@ -1,18 +1,3 @@
 {
-  "midterm": [
-    "The Life Cycle",
-    "Methodologies",
-    "Requirements",
-    "Use Cases",
-    "Data Flow Diagrams",
-    "Entity Relationship Diagrams"
-  ],
-  "final": [
-    "Normalization",
-    "Design Strategy",
-    "Architecture Design",
-    "User Interface Design",
-    "Program Design",
-    "Data Storage Design"
-  ]
+  "midterm": ["Quiz 1", "Quiz 2", "Quiz 3", "Quiz 4", "Midterm review"]
 }
