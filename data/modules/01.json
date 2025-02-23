@@ -4,10 +4,7 @@
     "choices": {
       "A": { "choice": "To store redundant data" },
       "B": { "choice": "To process raw data" },
-      "C": {
-        "choice": "To define and control the structure of the data",
-        "isCorrect": true
-      },
+      "C": { "choice": "To define and control the structure of the data", "isCorrect": true },
       "D": { "choice": "To replace database management systems" }
     }
   },
@@ -16,10 +13,7 @@
     "choices": {
       "A": { "choice": "Manual file system" },
       "B": { "choice": "Computerized file system" },
-      "C": {
-        "choice": "Relational Database Management System (RDBMS)",
-        "isCorrect": true
-      },
+      "C": { "choice": "Relational Database Management System (RDBMS)", "isCorrect": true },
       "D": { "choice": "NoSQL Database" }
     }
   },
@@ -28,10 +22,7 @@
     "choices": {
       "A": { "choice": "Fast development times" },
       "B": { "choice": "High data security" },
-      "C": {
-        "choice": "Extensive programming required for reports",
-        "isCorrect": true
-      },
+      "C": { "choice": "Extensive programming required for reports", "isCorrect": true },
       "D": { "choice": "High data consistency" }
     }
   },
@@ -39,10 +30,7 @@
     "question": "What does the term 'data integrity' refer to in databases?",
     "choices": {
       "A": { "choice": "Preventing data duplication" },
-      "B": {
-        "choice": "Ensuring data consistency and accuracy",
-        "isCorrect": true
-      },
+      "B": { "choice": "Ensuring data consistency and accuracy", "isCorrect": true },
       "C": { "choice": "Allowing only a single user at a time" },
       "D": { "choice": "Storing metadata for each data field" }
     }
@@ -59,10 +47,7 @@
   "01_06": {
     "question": "What does OLTP (Online Transaction Processing) enable in modern database applications?",
     "choices": {
-      "A": {
-        "choice": "Execution of real-time transactions",
-        "isCorrect": true
-      },
+      "A": { "choice": "Execution of real-time transactions", "isCorrect": true },
       "B": { "choice": "Analysis of historical data" },
       "C": { "choice": "Creation of visual dashboards" },
       "D": { "choice": "Indexing of multimedia data" }
@@ -73,10 +58,7 @@
     "choices": {
       "A": { "choice": "Designing the database schema" },
       "B": { "choice": "Writing complex queries for end-users" },
-      "C": {
-        "choice": "Granting or restricting user permissions",
-        "isCorrect": true
-      },
+      "C": { "choice": "Granting or restricting user permissions", "isCorrect": true },
       "D": { "choice": "Creating canned transactions for naive users" }
     }
   },
@@ -95,24 +77,16 @@
       "A": { "choice": "When applications are complex and dynamic" },
       "B": { "choice": "When stringent real-time requirements exist" },
       "C": { "choice": "When multi-user access is required" },
-      "D": {
-        "choice": "When data complexity is low and not subject to change.",
-        "isCorrect": true
-      }
+      "D": { "choice": "When data complexity is low and not subject to change.", "isCorrect": true }
     }
   },
   "01_10": {
     "question": "A company decides to use a DBMS to manage its growing customer data. However, the company notices that the initial investment in the DBMS is high, and the database does not have complex relationships or frequent updates. Should the company continue with the DBMS, and why?",
     "choices": {
-      "A": {
-        "choice": "Yes, because the DBMS provides robust data consistency."
-      },
+      "A": { "choice": "Yes, because the DBMS provides robust data consistency." },
       "B": { "choice": "No, because a DBMS cannot handle simple data models." },
       "C": { "choice": "Yes, because the DBMS is mandatory for any database." },
-      "D": {
-        "choice": "No, because a simpler system would suffice for their need.",
-        "isCorrect": true
-      }
+      "D": { "choice": "No, because a simpler system would suffice for their need.", "isCorrect": true }
     }
   }
 }

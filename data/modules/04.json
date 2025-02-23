@@ -3,10 +3,7 @@
     "question": "With MySQL, how do you select all the records from a table named \"Person\" where the value of the column \"FirstName\" starts wit an \"a\"?",
     "choices": {
       "A": { "choice": "select * from persons where FirstName = \"%a%\"" },
-      "B": {
-        "choice": "select * from persons where FirstName like \"a%\"",
-        "isCorrect": true
-      },
+      "B": { "choice": "select * from persons where FirstName like \"a%\"", "isCorrect": true },
       "C": { "choice": "select * from persons where FirstName like \"%a\"" },
       "D": { "choice": "select * from persons where FirstName = \"a\"" }
     }
@@ -33,10 +30,7 @@
     "question": "What is the purpose of the HAVING clause in SQL?",
     "choices": {
       "A": { "choice": "It filters rows before aggregation" },
-      "B": {
-        "choice": "It filters rows within groups after aggregation",
-        "isCorrect": true
-      },
+      "B": { "choice": "It filters rows within groups after aggregation", "isCorrect": true },
       "C": { "choice": "It sorts the output" },
       "D": { "choice": "It specifies the number of rows returned" }
     }
@@ -63,10 +57,7 @@
     "question": "What is a CROSS JOIN used for?",
     "choices": {
       "A": { "choice": "To match rows from two tables using a foreign key" },
-      "B": {
-        "choice": "To generate a Cartesian product of two tables",
-        "isCorrect": true
-      },
+      "B": { "choice": "To generate a Cartesian product of two tables", "isCorrect": true },
       "C": { "choice": "To join a table to itself" },
       "D": { "choice": "To perform a recursive join" }
     }
@@ -84,10 +75,7 @@
     "question": "How do you rename a column in a MySQL table?",
     "choices": {
       "A": { "choice": "ALTER COLUMN old_name TO new_name;" },
-      "B": {
-        "choice": "ALTER TABLE table_name RENAME COLUMN old_name TO new_name;",
-        "isCorrect": true
-      },
+      "B": { "choice": "ALTER TABLE table_name RENAME COLUMN old_name TO new_name;", "isCorrect": true },
       "C": { "choice": "MODIFY COLUMN old_name RENAME new_name;" },
       "D": { "choice": "CHANGE COLUMN old_name new_name;" }
     }
@@ -96,10 +84,7 @@
     "question": "Your company's orders table records purchases, but some customers haven't provided their email addresses. The table structure is: <pre>CREATE TABLE orders (<br>  order_id INT PRIMARY KEY,<br>  customer_name VARCHAR(100) NOT NULL,<br>  email VARCHAR(100),<br>  order_date DATE NOT NULL,<br>  total_amount DECIMAL(10,2) NOT NULL<br>);</pre> Which query should you use to retrieve orders where customers did not provide an email address?",
     "choices": {
       "A": { "choice": "SELECT * FROM orders WHERE email = '';" },
-      "B": {
-        "choice": "SELECT * FROM orders WHERE email IS NULL;",
-        "isCorrect": true
-      },
+      "B": { "choice": "SELECT * FROM orders WHERE email IS NULL;", "isCorrect": true },
       "C": { "choice": "SELECT * FROM orders WHERE email = 'NULL';" },
       "D": { "choice": "SELECT * FROM orders WHERE email = 0;" }
     }

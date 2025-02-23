@@ -22,10 +22,7 @@
     "choices": {
       "A": { "choice": "Add a foreign key in Teachers referencing Subjects" },
       "B": { "choice": "Add a foreign key in Subjects referencing Teachers" },
-      "C": {
-        "choice": "Create a junction table to store Teacher_ID and Subject_ID",
-        "isCorrect": true
-      },
+      "C": { "choice": "Create a junction table to store Teacher_ID and Subject_ID", "isCorrect": true },
       "D": { "choice": "Create a composite key in the Teachers table" }
     }
   },
