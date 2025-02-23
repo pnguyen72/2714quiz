@@ -551,8 +551,8 @@
   "05_062": {
     "question": "What will happen if you divide a number by zero in SQL?",
     "choices": {
-      "A": { "choice": "The query will return NULL" },
-      "B": { "choice": "The query will return an error", "isCorrect": true },
+      "A": { "choice": "The query will return NULL", "isCorrect": true },
+      "B": { "choice": "The query will return an error" },
       "C": { "choice": "The result will be 0" },
       "D": { "choice": "The DBMS will crash" }
     }
