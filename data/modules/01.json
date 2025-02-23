@@ -1,1 +1,118 @@
-{}
+{
+  "01_01": {
+    "question": "What is the primary purpose of metadata in a database?",
+    "choices": {
+      "A": { "choice": "To store redundant data" },
+      "B": { "choice": "To process raw data" },
+      "C": {
+        "choice": "To define and control the structure of the data",
+        "isCorrect": true
+      },
+      "D": { "choice": "To replace database management systems" }
+    }
+  },
+  "01_02": {
+    "question": "A small business tracks customer information, such as names, addresses, and phone numbers, using a spreadsheet. They want to upgrade to a system that allows multiple users to access data simultaneously, ensures data consistency, and provides backup and recovery options. What should the business implement?",
+    "choices": {
+      "A": { "choice": "Manual file system" },
+      "B": { "choice": "Computerized file system" },
+      "C": {
+        "choice": "Relational Database Management System (RDBMS)",
+        "isCorrect": true
+      },
+      "D": { "choice": "NoSQL Database" }
+    }
+  },
+  "01_03": {
+    "question": "What is a limitation of a manual file system?",
+    "choices": {
+      "A": { "choice": "Fast development times" },
+      "B": { "choice": "High data security" },
+      "C": {
+        "choice": "Extensive programming required for reports",
+        "isCorrect": true
+      },
+      "D": { "choice": "High data consistency" }
+    }
+  },
+  "01_04": {
+    "question": "What does the term 'data integrity' refer to in databases?",
+    "choices": {
+      "A": { "choice": "Preventing data duplication" },
+      "B": {
+        "choice": "Ensuring data consistency and accuracy",
+        "isCorrect": true
+      },
+      "C": { "choice": "Allowing only a single user at a time" },
+      "D": { "choice": "Storing metadata for each data field" }
+    }
+  },
+  "01_05": {
+    "question": "A university's database stores student information, including names, IDs, and course registrations. The database often faces issues with inconsistent data entries and duplication. Students' records occasionally fail to match with their course registrations. What is the most likely problem in the database?",
+    "choices": {
+      "A": { "choice": "Data redundancy", "isCorrect": true },
+      "B": { "choice": "Metadata corruption" },
+      "C": { "choice": "Lack of user-defined operations" },
+      "D": { "choice": "Overhead due to a DBMS" }
+    }
+  },
+  "01_06": {
+    "question": "What does OLTP (Online Transaction Processing) enable in modern database applications?",
+    "choices": {
+      "A": {
+        "choice": "Execution of real-time transactions",
+        "isCorrect": true
+      },
+      "B": { "choice": "Analysis of historical data" },
+      "C": { "choice": "Creation of visual dashboards" },
+      "D": { "choice": "Indexing of multimedia data" }
+    }
+  },
+  "01_07": {
+    "question": "What is a responsibility of database administrators (DBAs)?",
+    "choices": {
+      "A": { "choice": "Designing the database schema" },
+      "B": { "choice": "Writing complex queries for end-users" },
+      "C": {
+        "choice": "Granting or restricting user permissions",
+        "isCorrect": true
+      },
+      "D": { "choice": "Creating canned transactions for naive users" }
+    }
+  },
+  "01_08": {
+    "question": "A team of engineers is working on a database-driven application. During development, they decide to modify the structure of the database by adding new columns to some tables. They want the application programs accessing the database to work without requiring changes to the code. What feature of the database approach enables this flexibility?",
+    "choices": {
+      "A": { "choice": "Data abstraction" },
+      "B": { "choice": "Program-data independence", "isCorrect": true },
+      "C": { "choice": "Support for multiple interfaces" },
+      "D": { "choice": "Active processing" }
+    }
+  },
+  "01_09": {
+    "question": "When is it unnecessary to use a DBMS?",
+    "choices": {
+      "A": { "choice": "When applications are complex and dynamic" },
+      "B": { "choice": "When stringent real-time requirements exist" },
+      "C": { "choice": "When multi-user access is required" },
+      "D": {
+        "choice": "When data complexity is low and not subject to change.",
+        "isCorrect": true
+      }
+    }
+  },
+  "01_10": {
+    "question": "A company decides to use a DBMS to manage its growing customer data. However, the company notices that the initial investment in the DBMS is high, and the database does not have complex relationships or frequent updates. Should the company continue with the DBMS, and why?",
+    "choices": {
+      "A": {
+        "choice": "Yes, because the DBMS provides robust data consistency."
+      },
+      "B": { "choice": "No, because a DBMS cannot handle simple data models." },
+      "C": { "choice": "Yes, because the DBMS is mandatory for any database." },
+      "D": {
+        "choice": "No, because a simpler system would suffice for their need.",
+        "isCorrect": true
+      }
+    }
+  }
+}

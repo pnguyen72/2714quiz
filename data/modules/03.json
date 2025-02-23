@@ -1,1 +1,83 @@
-{}
+{
+  "03_19": {
+    "question": "In relational algebra, which operation is used to select specific rows based on a condition?",
+    "choices": {
+      "A": { "choice": "Projection (π)" },
+      "B": { "choice": "Selection (σ)", "isCorrect": true },
+      "C": { "choice": "Union (∪)" },
+      "D": { "choice": "Cross-product (×)" }
+    }
+  },
+  "03_20": {
+    "question": "Assume there are two tables in a relational database A and B (Table1 = A and Table2 = B). What does the set difference operation A - B result in (with respect to relational algebra)?",
+    "choices": {
+      "A": { "choice": "Combines tuples from the two relations" },
+      "B": { "choice": "Selects rows from A but not in B", "isCorrect": true },
+      "C": { "choice": "Fetches common rows between the two tables" },
+      "D": { "choice": "Joins A and B based on common attributes" }
+    }
+  },
+  "03_21": {
+    "question": "You have two relations, Teachers and Subjects. Each teacher can teach multiple subjects, and each subject can be taught by multiple teachers. How should you represent this relationship in a relational database?",
+    "choices": {
+      "A": { "choice": "Add a foreign key in Teachers referencing Subjects" },
+      "B": { "choice": "Add a foreign key in Subjects referencing Teachers" },
+      "C": {
+        "choice": "Create a junction table to store Teacher_ID and Subject_ID",
+        "isCorrect": true
+      },
+      "D": { "choice": "Create a composite key in the Teachers table" }
+    }
+  },
+  "03_22": {
+    "question": "If you want to combine two relations, TableA and TableB, such that you only include rows with matching attributes in both tables, which operation would you use?",
+    "choices": {
+      "A": { "choice": "Union (∪)" },
+      "B": { "choice": "Intersection (∩)", "isCorrect": true },
+      "C": { "choice": "Set Difference (-)" },
+      "D": { "choice": "Cartesian Product (×)" }
+    }
+  },
+  "03_23": {
+    "question": "An attribute or combination of attributes used strictly for data retrieval purposes is called",
+    "choices": {
+      "A": { "choice": "primary key" },
+      "B": { "choice": "foreign key" },
+      "C": { "choice": "super key" },
+      "D": { "choice": "secondary key", "isCorrect": true }
+    }
+  },
+  "03_24": {
+    "question": "STU_NUM -> STU_LNAME. In this functional dependency, STU_NUM is the _______ and STU_LNAME is the _______",
+    "choices": {
+      "A": { "choice": "determinant, dependent", "isCorrect": true },
+      "B": { "choice": "dependent, determinant" },
+      "C": { "choice": "dependent, dependent" },
+      "D": { "choice": "determinant, determinant" }
+    }
+  },
+  "03_25": {
+    "question": "A null value means a zero or a space",
+    "choices": {
+      "A": { "choice": "True" },
+      "B": { "choice": "False", "isCorrect": true }
+    }
+  },
+  "03_26": {
+    "question": "A relvar heading contains the names of the attributes, while the relvar body contains the relation.",
+    "choices": {
+      "A": { "choice": "True", "isCorrect": true },
+      "B": { "choice": "False" }
+    }
+  },
+  "03_27": {
+    "question": "What type of relationship exists between the painter and the painting?",
+    "choices": {
+      "A": { "choice": "one-to-many", "isCorrect": true },
+      "B": { "choice": "one-to-one" },
+      "C": { "choice": "many-to-one" },
+      "D": { "choice": "many-to-many" }
+    },
+    "hasImage": true
+  }
+}
