@@ -56,7 +56,8 @@ function generateModuleSelection() {
     moduleSelectBox.id = `${String(index + indexOffset).padStart(2, "0")}`;
     moduleSelectBox.type = "checkbox";
     moduleSelectBox.addEventListener("input", () => {
-      document.getElementById("module-all").checked = !modulesList.querySelector(".module-input:not(:checked)");
+      document.getElementById("module-all").checked =
+        !modulesList.querySelector(".module-input:not(:checked)");
     });
 
     moduleLabel.appendChild(moduleSelectBox);
@@ -78,7 +79,11 @@ function generateModuleSelection() {
   moduleCoverage.className = "coverage";
   moduleSelectBox.type = "checkbox";
   moduleSelectBox.id = "module-all";
-  moduleSelectBox.addEventListener("click", () => document.querySelectorAll(".module-input").forEach((box) => (box.checked = moduleSelectBox.checked)));
+  moduleSelectBox.addEventListener("click", () =>
+    document
+      .querySelectorAll(".module-input")
+      .forEach((box) => (box.checked = moduleSelectBox.checked))
+  );
 
   moduleLabel.appendChild(moduleSelectBox);
   moduleLabel.appendChild(moduleTitle);
@@ -141,7 +146,11 @@ function generatePastAttempt(attemptData) {
 function recoverAttempt(quiz, option = { interactive: true }) {
   const recoverable = quiz.querySelectorAll(".question.recoverable");
   if (recoverable.length == 0) return;
-  if (option.interactive && !confirm("Continue your ongoing attempt?") && confirm("You will permanently lose your progress! Are you sure?")) {
+  if (
+    option.interactive &&
+    !confirm("Continue your ongoing attempt?") &&
+    confirm("You will permanently lose your progress! Are you sure?")
+  ) {
     unfinishedAttempts.delete(recoverable);
     return;
   }
@@ -149,7 +158,9 @@ function recoverAttempt(quiz, option = { interactive: true }) {
   let time = 0;
   recoverable.forEach((question) => {
     const attemptData = unfinishedAttempts.get(question.id);
-    question.querySelectorAll(".choice-input").forEach((input) => (input.checked = attemptData[input.id]));
+    question
+      .querySelectorAll(".choice-input")
+      .forEach((input) => (input.checked = attemptData[input.id]));
     time += attemptData.time;
     if (attemptData.unsure) {
       question.querySelector(".unsure-check").checked = true;
@@ -160,7 +171,11 @@ function recoverAttempt(quiz, option = { interactive: true }) {
   startTimer(time);
   if (option.interactive) {
     checkCompletion(quiz);
-    quiz.querySelector(".question:not(.answered)")?.blink()?.previous()?.scrollTo();
+    quiz
+      .querySelector(".question:not(.answered)")
+      ?.blink()
+      ?.previous()
+      ?.scrollTo();
   }
 }
 
@@ -198,7 +213,8 @@ function generateQuestion(questionId, questionIndex) {
   unsureLabel.appendChild(imNotSure);
   unsureLabel.appendChild(showExplanation);
   questionTitleContainter.appendChild(questionTitle);
-  if (knowledge.hasLearned(questionId)) questionTitleContainter.appendChild(learnedTag);
+  if (knowledge.hasLearned(questionId))
+    questionTitleContainter.appendChild(learnedTag);
   questionHeader.appendChild(questionTitleContainter);
   questionHeader.appendChild(unsureLabel);
 
@@ -288,7 +304,10 @@ function generateQuestion(questionId, questionIndex) {
   if (attemptData) {
     question.classList.add("recoverable");
   }
-  question.addEventListener("animationend", () => (question.style.animation = ""));
+  question.addEventListener(
+    "animationend",
+    () => (question.style.animation = "")
+  );
   // the selector is cursed because the question id starts with a number
   // it's too inconvenient to change that now
   const questionSelector = `#\\3${questionId[0]} ${questionId.slice(1)}`;
@@ -299,7 +318,9 @@ function generateQuestion(questionId, questionIndex) {
     if (!selector) {
       return quizPage.querySelector(`.question:has(+${questionSelector})`);
     }
-    const candidates = quizPage.querySelectorAll(`.question${selector}:has(~${questionSelector})`);
+    const candidates = quizPage.querySelectorAll(
+      `.question${selector}:has(~${questionSelector})`
+    );
     return candidates[candidates.length - 1];
   };
   question.scrollTo = () => {
@@ -342,59 +363,63 @@ function updateAttemptsTable() {
     return;
   }
 
-  pastAttempts.slice(tableRows.length - pastAttempts.length).forEach((attempt) => {
-    const score = attempt.score;
-    const outOf = attempt.outOf;
-    const accuracy = score / (outOf + Number.EPSILON);
-    const roundedAccuracy = Math.round((accuracy + Number.EPSILON) * 100);
-    const [H, S, L] = getColor(accuracy);
+  pastAttempts
+    .slice(tableRows.length - pastAttempts.length)
+    .forEach((attempt) => {
+      const score = attempt.score;
+      const outOf = attempt.outOf;
+      const accuracy = score / (outOf + Number.EPSILON);
+      const roundedAccuracy = Math.round((accuracy + Number.EPSILON) * 100);
+      const [H, S, L] = getColor(accuracy);
 
-    const row = document.createElement("tr");
-    const timestamp = document.createElement("td");
-    const modules = document.createElement("td");
-    const duration = document.createElement("td");
-    const result = document.createElement("td");
-    const resultScore = document.createElement("span");
-    const resultPercentage = document.createElement("span");
+      const row = document.createElement("tr");
+      const timestamp = document.createElement("td");
+      const modules = document.createElement("td");
+      const duration = document.createElement("td");
+      const result = document.createElement("td");
+      const resultScore = document.createElement("span");
+      const resultPercentage = document.createElement("span");
 
-    timestamp.className = "timestamp";
-    timestamp.setAttribute("value", attempt.timestamp);
-    timestamp.addEventListener("click", () => {
-      document.getElementById("quiz").replaceWith(generatePastAttempt(attempt.data));
-      toQuizPage();
-      showResult(score, outOf);
-      navText.innerText = attempt.duration;
+      timestamp.className = "timestamp";
+      timestamp.setAttribute("value", attempt.timestamp);
+      timestamp.addEventListener("click", () => {
+        document
+          .getElementById("quiz")
+          .replaceWith(generatePastAttempt(attempt.data));
+        toQuizPage();
+        showResult(score, outOf);
+        navText.innerText = attempt.duration;
+      });
+
+      modules.className = "modules";
+      modules.innerText = attempt.modules;
+
+      duration.className = "duration";
+      duration.innerText = attempt.duration;
+
+      resultScore.className = "score";
+      resultScore.innerText = `${score}/${outOf}`;
+
+      resultPercentage.className = "percentage";
+      resultPercentage.innerText = ` (${roundedAccuracy}%)`;
+
+      result.className = "result";
+      result.style.backgroundColor = `hsla(${H}, ${S}%, ${L}%, ${0.75})`;
+      if (darkModeToggle.checked) {
+        result.style.color = L < 61 ? "#eee" : "#000";
+      }
+      result.appendChild(resultScore);
+      result.appendChild(resultPercentage);
+
+      row.className = "row";
+      row.setAttribute("exam", attempt.exam);
+      row.setAttribute("modules", attempt.modules);
+      row.appendChild(timestamp);
+      row.appendChild(modules);
+      row.appendChild(duration);
+      row.appendChild(result);
+      attemptsTable.querySelector("tbody").appendChild(row);
     });
-
-    modules.className = "modules";
-    modules.innerText = attempt.modules;
-
-    duration.className = "duration";
-    duration.innerText = attempt.duration;
-
-    resultScore.className = "score";
-    resultScore.innerText = `${score}/${outOf}`;
-
-    resultPercentage.className = "percentage";
-    resultPercentage.innerText = ` (${roundedAccuracy}%)`;
-
-    result.className = "result";
-    result.style.backgroundColor = `hsla(${H}, ${S}%, ${L}%, ${0.75})`;
-    if (darkModeToggle.checked) {
-      result.style.color = L < 61 ? "#eee" : "#000";
-    }
-    result.appendChild(resultScore);
-    result.appendChild(resultPercentage);
-
-    row.className = "row";
-    row.setAttribute("exam", attempt.exam);
-    row.setAttribute("modules", attempt.modules);
-    row.appendChild(timestamp);
-    row.appendChild(modules);
-    row.appendChild(duration);
-    row.appendChild(result);
-    attemptsTable.querySelector("tbody").appendChild(row);
-  });
   refreshAttemptsTable();
 }
 
@@ -435,7 +460,9 @@ function updateCoverage() {
   }
 
   // stat for "All of them!"
-  const moduleAllCoverage = modules.querySelector("li:has(#module-all) .coverage");
+  const moduleAllCoverage = modules.querySelector(
+    "li:has(#module-all) .coverage"
+  );
 
   if (modules.querySelector("li:has(.module-input) .coverage:not(.visible)")) {
     hide(moduleAllCoverage);
@@ -456,7 +483,9 @@ function updateCoverage() {
   unhide(moduleAllCoverage);
 
   if (roundedCoverage == 100) {
-    licenseGrantException("Congrats, you've learned 100% of the question bank! 🥳");
+    licenseGrantException(
+      "Congrats, you've learned 100% of the question bank! 🥳"
+    );
   }
 }
 
