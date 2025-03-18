@@ -1,5 +1,6 @@
 var db = null;
-var leaderboard = null;
+var userDB = null;
+var leaderboardDB = null;
 var converter = null;
 
 var firebaseLoading = Promise.resolve();
@@ -20,7 +21,8 @@ function loadFirebase() {
             firebase.initializeApp(firebaseConfig);
             let firestore = firebase.firestore();
             db = firestore.collection("2714");
-            leaderboard = firestore.collection("2714-lb");
+            userDB = firestore.collection("users");
+            leaderboardDB = firestore.collection("2714-leaderboard");
         });
     return firebaseLoading;
 }
