@@ -20,6 +20,7 @@ function loadFirebase() {
         .then(() => {
             firebase.initializeApp(firebaseConfig);
             let firestore = firebase.firestore();
+            firestore.enablePersistence().catch(() => null);
             db = firestore.collection("2714");
             userDB = firestore.collection("users");
             leaderboardDB = firestore.collection("2714-leaderboard");
