@@ -1,0 +1,93 @@
+{
+  "07_01": {
+    "question": "Which keyword is used to declare a variable inside a stored procedure?",
+    "choices": {
+    "A": { "choice": "<code>DECLARE</code>", "correct": true },
+    "B": { "choice": "<code>INIT</code>", "correct": false },
+    "C": { "choice": "<code>SET</code>", "correct": false },
+    "D": { "choice": "<code>BEGIN</code>", "correct": false }
+    }
+  },
+  "07_02": {
+    "question": "Which control structure is used for conditional execution?",
+    "choices": {
+    "A": { "choice": "<code>IF...ELSE</code>", "correct": true },
+    "B": { "choice": "<code>LOOP</code>", "correct": false },
+    "C": { "choice": "<code>WHILE</code>", "correct": false },
+    "D": { "choice": "<code>SWITCH</code>", "correct": false }
+    }
+  },
+  "07_03": {
+    "question": "Which of the following statements are true about cursors?",
+    "choices": {
+      "A": { "choice": "They are used for declaring variables", "correct": false },
+      "B": { "choice": "They replace stored procedures", "correct": false },
+      "C": { "choice": "They can process multiple rows returned by a query", "correct": true },
+      "D": { "choice": "They are not needed in SQL", "correct": false }
+    },
+    "multiSelect": true
+  },
+  "07_04": {
+    "question": "What is the correct syntax to declare a cursor?",
+    "choices": {
+    "A": { "choice": "<code>DECLARE cursor_name CURSOR FOR select-query</code>", "correct": true },
+    "B": { "choice": "<code>FETCH cursor_name CURSOR FOR select-query</code>", "correct": false },
+    "C": { "choice": "<code>INITIATE CURSOR FOR select-query</code>", "correct": false },
+    "D": { "choice": "<code>OPEN cursor_name FOR select-query</code>", "correct": false }
+    }
+  },
+  "07_05": {
+    "question": "What happens when a stored procedure has parameters?",
+    "choices": {
+      "A": { "choice": "Values are hard-coded", "correct": false },
+      "B": { "choice": "The procedure fails to execute", "correct": false },
+      "C": { "choice": "It allows passing values during execution", "correct": true },
+      "D": { "choice": "It becomes read-only", "correct": false }
+    }
+  },
+  "07_06": {
+    "question": "What does the <code>CALL temp_proc();</code> statement do?",
+    "choices": {
+      "A": { "choice": "Deletes the procedure", "correct": false },
+      "B": { "choice": "Execute the stored procedure", "correct": true },
+      "C": { "choice": "Compiles the procedure", "correct": false },
+      "D": { "choice": "Declares a new procedure", "correct": false }
+    }
+  },
+  "07_07": {
+    "question": "What is the result of <code>SELECT CONCAT(message, total) AS Result;</code>?",
+    "choices": {
+      "A": { "choice": "It returns the message alone", "correct": false },
+      "B": { "choice": "It concatenates the message and total shows it as \"Result\" column", "correct": true },
+      "C": { "choice": "It prints the result in the console", "correct": false },
+      "D": { "choice": "It creates a new table", "correct": false }
+    }
+  },
+  "07_08": {
+    "question": "How do you ensure a stored procedure doesn't throw an error if it already exists?",
+    "choices": {
+      "A": { "choice": "Use <code>REMOVE PROCEDURE</code>", "correct": false },
+      "B": { "choice": "Use <code>DELETE PROCEDURE</code>", "correct": false },
+      "C": { "choice": "Use <code>DROP DATABASE</code>", "correct": false },
+      "D": { "choice": "Use <code>DROP PROCEDURE IF EXISTS</code>", "correct": true }
+    }
+  },
+  "07_09": {
+    "question": "Which statement describes a parameter in a stored procedure?",
+    "choices": {
+      "A": { "choice": "A default message displayed", "correct": false },
+      "B": { "choice": "It is a value passed to the during execution", "correct": true },
+      "C": { "choice": "A random variable", "correct": false },
+      "D": { "choice": "A fixed value hardcoded in the procedure", "correct": false }
+    }
+  },
+  "07_10": {
+    "question": "What keyword starts a stored procedure body?",
+    "choices": {
+    "A": { "choice": "<code>BEGIN</code>", "correct": true },
+    "B": { "choice": "<code>START</code>", "correct": false },
+    "C": { "choice": "<code>RUN</code>", "correct": false },
+    "D": { "choice": "<code>EXECUTE</code>", "correct": false }
+    }
+  }
+}

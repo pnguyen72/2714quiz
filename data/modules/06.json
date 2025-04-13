@@ -1,0 +1,65 @@
+{
+  "06_01": {
+    "question": "What does Third Normal Form (3NF) resolve?",
+    "choices": {
+      "A": { "choice": "Composite keys", "correct": false },
+      "B": { "choice": "Transitive dependencies", "correct": true },
+      "C": { "choice": "Partial dependencies", "correct": false },
+      "D": { "choice": "Repeating groups", "correct": false }
+    }
+  },
+  "06_02": {
+    "question": "Which of the following must be met for a table to be in First Normal Form (1NF)?",
+    "choices": {
+      "A": { "choice": "Every determinant must be a candidate key", "correct": false },
+      "B": { "choice": "Each column must have atomic values", "correct": true },
+      "C": { "choice": "The table must be free of dependencies", "correct": false },
+      "D": { "choice": "The table should have no transitive dependencies", "correct": false }
+    }
+  },
+  "06_03": {
+    "question": "In which normal form are multi-valued dependencies removed?",
+    "choices": {
+      "A": { "choice": "Boyce-Codd Normal Form (BCNF)", "correct": false },
+      "B": { "choice": "Third Normal Form (3NF)", "correct": false },
+      "C": { "choice": "First Normal Form (1NF)", "correct": false },
+      "D": { "choice": "Fourth Normal Form (4NF)", "correct": true }
+    }
+  },
+  "06_04": {
+    "question": "A table is in Second Normal Form (2NF) if it's in 1NF and _____",
+    "choices": {
+      "A": { "choice": "has no transitive dependencies", "correct": false },
+      "B": { "choice": "has no partial dependencies", "correct": true },
+      "C": { "choice": "contains no repeating groups", "correct": false },
+      "D": { "choice": "has a single primary key", "correct": false }
+    }
+  },
+  "06_05": {
+    "question": "What is a partial dependency in a database table?",
+    "choices": {
+      "A": { "choice": "When a non-key attribute depends on another non-key attribute", "correct": false },
+      "B": { "choice": "When a table has repeating groups", "correct": false },
+      "C": { "choice": "When a non-key attribute depends on part of a composite primary key", "correct": true },
+      "D": { "choice": "When data is duplicated in multiple tables", "correct": false }
+    }
+  },
+  "06_06": {
+    "question": "What is the purpose of denormalization in a database?",
+    "choices": {
+      "A": { "choice": "Improve query performance by reducing joins", "correct": true },
+      "B": { "choice": "Eliminate all dependencies", "correct": false },
+      "C": { "choice": "Reduce data redundancy", "correct": false },
+      "D": { "choice": "Convert a database to First Normal Form", "correct": false }
+    }
+  },
+  "06_07": {
+    "question": "If a column contains multiple values in a single row, which normal form is violated?",
+    "choices": {
+      "A": { "choice": "First Normal Form (1NF)", "correct": true },
+      "B": { "choice": "Second Normal Form (2NF)", "correct": false },
+      "C": { "choice": "Third Normal Form (3NF)", "correct": false },
+      "D": { "choice": "Boyce-Codd Normal Form (BCNF)", "correct": false }
+    }
+  }
+}

@@ -4,6 +4,11 @@
     "Data Models",
     "Relational Database Model",
     "Structured Query Language",
-    "Midterm review"
+    "Midterm Review"
+  ],
+  "final": [
+    "Normalization",
+    "Procedures and Cursors",
+    "Final Review"
   ]
 }

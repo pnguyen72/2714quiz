@@ -1,0 +1,452 @@
+{
+  "08_01": {
+    "question": "What is the main goal of normalization in database design?",
+    "choices": {
+      "A": { "choice": "To increase data redundancy", "correct": false },
+      "B": { "choice": "To reduce query speed", "correct": false },
+      "C": { "choice": "To eliminate anomalies and redundancy", "correct": true },
+      "D": { "choice": "To denormalize the database", "correct": false }
+    }
+  },
+  "08_02": {
+    "question": "Which of the following is NOT a benefit of normalization?",
+    "choices": {
+      "A": { "choice": "Reduces update anomalies", "correct": false },
+      "B": { "choice": "Improves data integrity", "correct": false },
+      "C": { "choice": "Speeds up all query types", "correct": true },
+      "D": { "choice": "Reduces redundancy", "correct": false }
+    }
+  },
+  "08_03": {
+    "question": "A table is in First Normal Form (1NF) if:",
+    "choices": {
+      "A": { "choice": "It contains transitive dependencies", "correct": false },
+      "B": { "choice": "Each column has atomic values", "correct": true },
+      "C": { "choice": "All attributes depend on a foreign key", "correct": false },
+      "D": { "choice": "It contains repeating groups", "correct": false }
+    }
+  },
+  "08_04": {
+    "question": "What causes a table to violate Second Normal Form (2NF)?",
+    "choices": {
+      "A": { "choice": "The absence of a primary key", "correct": false },
+      "B": { "choice": "Transitive dependencies", "correct": false },
+      "C": { "choice": "Partial dependencies on a composite key", "correct": true },
+      "D": { "choice": "Use of foreign keys", "correct": false }
+    }
+  },
+  "08_05": {
+    "question": "What is a transitive dependency in a database?",
+    "choices": {
+      "A": { "choice": "When a column depends on the entire composite key", "correct": false },
+      "B": { "choice": "When a non-key attribute depends on another non-key attribute", "correct": true },
+      "C": { "choice": "When a table has no primary key", "correct": false },
+      "D": { "choice": "When foreign keys are used incorrectly", "correct": false }
+    }
+  },
+  "08_06": {
+    "question": "Which of the following is a requirement for a table to be in Third Normal Form (3NF)?",
+    "choices": {
+      "A": { "choice": "No foreign keys", "correct": false },
+      "B": { "choice": "All attributes must depend only on the primary key", "correct": true },
+      "C": { "choice": "Every table must have at least one transitive dependency", "correct": false },
+      "D": { "choice": "All attributes must be multivalued", "correct": false }
+    }
+  },
+  "08_07": {
+    "question": "Which scenario justifies using denormalization in a database?",
+    "choices": {
+      "A": { "choice": "When you want to eliminate redundant data", "correct": false },
+      "B": { "choice": "When data anomalies need to be reduced", "correct": false },
+      "C": { "choice": "When query performance is a higher priority than redundancy", "correct": true },
+      "D": { "choice": "When normalization has already been applied", "correct": false }
+    }
+  },
+  "08_08": {
+    "question": "Boyce-Codd Normal Form (BCNF) is an enhancement of which normal form?",
+    "choices": {
+      "A": { "choice": "1NF", "correct": false },
+      "B": { "choice": "2NF", "correct": false },
+      "C": { "choice": "3NF", "correct": true },
+      "D": { "choice": "5NF", "correct": false }
+    }
+  },
+  "08_09": {
+    "question": "In which of the following scenarios would you apply Fourth Normal Form (4NF)?",
+    "choices": {
+      "A": { "choice": "When a table has transitive dependencies", "correct": false },
+      "B": { "choice": "When multi-valued independent attributes exist in a table", "correct": true },
+      "C": { "choice": "When a table has only atomic values", "correct": false },
+      "D": { "choice": "When partial dependencies are present", "correct": false }
+    }
+  },
+  "08_10": {
+    "question": "What is a partial dependency in the context of normalization?",
+    "choices": {
+      "A": { "choice": "When a non-key attribute depends on another non-key attribute", "correct": false },
+      "B": { "choice": "When a non-key attribute depends only on part of a composite primary key", "correct": true },
+      "C": { "choice": "When a foreign key depends on the primary key", "correct": false },
+      "D": { "choice": "When all attributes are fully functionally dependent", "correct": false }
+    }
+  },
+  "08_11": {
+    "question": "Which of the following is NOT one of the four ACID properties of a transaction?",
+    "choices": {
+      "A": { "choice": "Atomicity", "correct": false },
+      "B": { "choice": "Consistency", "correct": false },
+      "C": { "choice": "Isolation", "correct": false },
+      "D": { "choice": "Duplication", "correct": true }
+    }
+  },
+  "08_12": {
+    "question": "What is the main purpose of concurrency control in a DBMS?",
+    "choices": {
+      "A": { "choice": "To prevent data normalization", "correct": false },
+      "B": { "choice": "To allow multiple databases to connect", "correct": false },
+      "C": { "choice": "To ensure serializability in multiuser environments", "correct": true },
+      "D": { "choice": "To backup data automatically", "correct": false }
+    }
+  },
+  "08_13": {
+    "question": "What does the COMMIT command do in SQL transaction control?",
+    "choices": {
+      "A": { "choice": "Rolls back the transaction", "correct": false },
+      "B": { "choice": "Saves all changes made by the transaction", "correct": true },
+      "C": { "choice": "Pauses the transaction", "correct": false },
+      "D": { "choice": "Deletes the transaction log", "correct": false }
+    }
+  },
+  "08_14": {
+    "question": "What is a deadlock in the context of transactions?",
+    "choices": {
+      "A": { "choice": "When a transaction completes successfully", "correct": false },
+      "B": { "choice": "When two transactions wait indefinitely for each other to release locks", "correct": true },
+      "C": { "choice": "When a system crashes", "correct": false },
+      "D": { "choice": "When a log file is full", "correct": false }
+    }
+  },
+  "08_15": {
+    "question": "What is a dirty read in database concurrency?",
+    "choices": {
+      "A": { "choice": "Reading data that does not exist", "correct": false },
+      "B": { "choice": "Reading data that is not yet committed", "correct": true },
+      "C": { "choice": "Reading data after it has been committed", "correct": false },
+      "D": { "choice": "Reading from a locked row", "correct": false }
+    }
+  },
+  "08_16": {
+    "question": "What is the purpose of a transaction log?",
+    "choices": {
+      "A": { "choice": "To track user logins", "correct": false },
+      "B": { "choice": "To store the transaction code", "correct": false },
+      "C": { "choice": "To record all database updates for recovery", "correct": true },
+      "D": { "choice": "To run background transactions", "correct": false }
+    }
+  },
+  "08_17": {
+    "question": "Which isolation level prevents dirty reads?",
+    "choices": {
+      "A": { "choice": "Read Uncommitted", "correct": false },
+      "B": { "choice": "Read Committed", "correct": true },
+      "C": { "choice": "Repeatable Read", "correct": false },
+      "D": { "choice": "Serializable", "correct": false }
+    }
+  },
+  "08_18": {
+    "question": "What is the 'shrinking phase' in two-phase locking?",
+    "choices": {
+      "A": { "choice": "Locks are acquired", "correct": false },
+      "B": { "choice": "Locks are released", "correct": true },
+      "C": { "choice": "Transactions are validated", "correct": false },
+      "D": { "choice": "New transactions are added", "correct": false }
+    }
+  },
+  "08_19": {
+    "question": "Which concurrency control method assumes conflicts are rare?",
+    "choices": {
+      "A": { "choice": "Pessimistic locking", "correct": false },
+      "B": { "choice": "Optimistic method", "correct": true },
+      "C": { "choice": "Two-phase locking", "correct": false },
+      "D": { "choice": "Deadlock avoidance", "correct": false }
+    }
+  },
+  "08_20": {
+    "question": "What is the main disadvantage of timestamp-based concurrency control?",
+    "choices": {
+      "A": { "choice": "It prevents serializability", "correct": false },
+      "B": { "choice": "It increases memory and processing overhead", "correct": true },
+      "C": { "choice": "It does not support locking", "correct": false },
+      "D": { "choice": "It lacks durability", "correct": false }
+    }
+  },
+  "08_21": {
+    "question": "What is a stored procedure?",
+    "choices": {
+      "A": { "choice": "A temporary script run on the client-side", "correct": false },
+      "B": { "choice": "A named collection of SQL and procedural statements stored in the database", "correct": true },
+      "C": { "choice": "A function executed automatically when a table is queried", "correct": false },
+      "D": { "choice": "A tool for visualizing database schema", "correct": false }
+    }
+  },
+  "08_22": {
+    "question": "Which of the following is NOT an advantage of stored procedures?",
+    "choices": {
+      "A": { "choice": "Reduces network traffic", "correct": false },
+      "B": { "choice": "Improves performance", "correct": false },
+      "C": { "choice": "Encapsulates business logic", "correct": false },
+      "D": { "choice": "Requires client-side compilation", "correct": true }
+    }
+  },
+  "08_23": {
+    "question": "What keyword is used in SQL to declare a variable inside a stored procedure?",
+    "choices": {
+      "A": { "choice": "<code>DEFINE</code>", "correct": false },
+      "B": { "choice": "<code>DECLARE</code>", "correct": true },
+      "C": { "choice": "<code>SET</code>", "correct": false },
+      "D": { "choice": "<code>LET</code>", "correct": false }
+    }
+  },
+  "08_24": {
+    "question": "What is the purpose of the 'DELIMITER' keyword in procedural SQL?",
+    "choices": {
+      "A": { "choice": "To change the line spacing", "correct": false },
+      "B": { "choice": "To separate multiple procedures", "correct": false },
+      "C": { "choice": "To define a new delimiter for block of statements", "correct": true },
+      "D": { "choice": "To end a SELECT statement", "correct": false }
+    }
+  },
+  "08_25": {
+    "question": "Which SQL construct is used to repeatedly execute a block of statements?",
+    "choices": {
+      "A": { "choice": "<code>IF</code>", "correct": false },
+      "B": { "choice": "<code>LOOP</code>", "correct": true },
+      "C": { "choice": "<code>CASE</code>", "correct": false },
+      "D": { "choice": "<code>RETURN</code>", "correct": false }
+    }
+  },
+  "08_26": {
+    "question": "What is a cursor used for in SQL procedures?",
+    "choices": {
+      "A": { "choice": "To define triggers", "correct": false },
+      "B": { "choice": "To create views", "correct": false },
+      "C": { "choice": "To iterate through query result rows", "correct": true },
+      "D": { "choice": "To compile stored procedures", "correct": false }
+    }
+  },
+  "08_27": {
+    "question": "What type of cursor is created automatically when a SQL query returns one row?",
+    "choices": {
+      "A": { "choice": "Explicit cursor", "correct": false },
+      "B": { "choice": "Private cursor", "correct": false },
+      "C": { "choice": "Open cursor", "correct": false },
+      "D": { "choice": "Implicit cursor", "correct": true }
+    }
+  },
+  "08_28": {
+    "question": "What is the keyword used to exit from a loop prematurely?",
+    "choices": {
+      "A": { "choice": "<code>BREAK</code>", "correct": false },
+      "B": { "choice": "<code>EXIT</code>", "correct": false },
+      "C": { "choice": "<code>LEAVE</code>", "correct": true },
+      "D": { "choice": "<code>STOP</code>", "correct": false }
+    }
+  },
+  "08_29": {
+    "question": "What phase in an optimistic concurrency method checks for data integrity violations?",
+    "choices": {
+      "A": { "choice": "Write", "correct": false },
+      "B": { "choice": "Commit", "correct": false },
+      "C": { "choice": "Validation", "correct": true },
+      "D": { "choice": "Read", "correct": false }
+    }
+  },
+  "08_30": {
+    "question": "What is the role of parameters in stored procedures?",
+    "choices": {
+      "A": { "choice": "They determine table structure", "correct": false },
+      "B": { "choice": "They store the output of the procedure", "correct": false },
+      "C": { "choice": "They allow input values at the time of procedure execution", "correct": true },
+      "D": { "choice": "They define transaction isolation levels", "correct": false }
+    }
+  },
+  "08_31": {
+    "question": "What is the main purpose of Business Intelligence (BI)?",
+    "choices": {
+      "A": { "choice": "Create new operational databases", "correct": false },
+      "B": { "choice": "Store historical data for archiving", "correct": false },
+      "C": { "choice": "Automate customer transactions", "correct": false },
+      "D": { "choice": "Generate and present information to support business decision making", "correct": true }
+    }
+  },
+  "08_32": {
+    "question": "Which of the following is a key characteristic of a data warehouse?",
+    "choices": {
+      "A": { "choice": "Volatile", "correct": false },
+      "B": { "choice": "Transaction-based", "correct": false },
+      "C": { "choice": "Temporary", "correct": false },
+      "D": { "choice": "Non-volatile", "correct": true }
+    }
+  },
+  "08_33": {
+    "question": "What does OLAP stand for?",
+    "choices": {
+      "A": { "choice": "Optimized Logic and Processing", "correct": false },
+      "B": { "choice": "Online Analytical Processing", "correct": true },
+      "C": { "choice": "Online Advanced Programming", "correct": false },
+      "D": { "choice": "Operational Layered Analysis Platform", "correct": false }
+    }
+  },
+  "08_34": {
+    "question": "Which schema is commonly used in data warehousing to map multidimensional data?",
+    "choices": {
+      "A": { "choice": "Star Schema", "correct": true },
+      "B": { "choice": "Normalized Schema", "correct": false },
+      "C": { "choice": "Entity-Relationship Schema", "correct": false },
+      "D": { "choice": "Relational Schema", "correct": false }
+    }
+  },
+  "08_35": {
+    "question": "Which is NOT a benefit of BI systems?",
+    "choices": {
+      "A": { "choice": "Common user interface for data reporting", "correct": false },
+      "B": { "choice": "Common data repository", "correct": false },
+      "C": { "choice": "Multiple data entry interfaces", "correct": true },
+      "D": { "choice": "Improved decision making", "correct": false }
+    }
+  },
+  "08_36": {
+    "question": "Data analytics is a subset of which of the following?",
+    "choices": {
+      "A": { "choice": "Data Warehousing", "correct": false },
+      "B": { "choice": "OLAP", "correct": false },
+      "C": { "choice": "Business Intelligence", "correct": true },
+      "D": { "choice": "Operational Databases", "correct": false }
+    }
+  },
+  "08_37": {
+    "question": "Which technique is used to generate subtotal and grand total aggregates in SQL?",
+    "choices": {
+      "A": { "choice": "<code>JOIN</code>", "correct": false },
+      "B": { "choice": "<code>INDEX</code>", "correct": false },
+      "C": { "choice": "<code>GROUPING SETS</code>", "correct": false },
+      "D": { "choice": "<code>ROLLUP</code>", "correct": true }
+    }
+  },
+  "08_38": {
+    "question": "What is a data mart?",
+    "choices": {
+      "A": { "choice": "A temporary storage table", "correct": false },
+      "B": { "choice": "A small, single-subject data warehouse", "correct": true },
+      "C": { "choice": "A transactional database", "correct": false },
+      "D": { "choice": "A data visualization tool", "correct": false }
+    }
+  },
+  "08_39": {
+    "question": "What is the purpose of data visualization?",
+    "choices": {
+      "A": { "choice": "To increase OLTP transaction rates", "correct": false },
+      "B": { "choice": "To manage network security", "correct": false },
+      "C": { "choice": "To enhance understanding of data through visual representation", "correct": true },
+      "D": { "choice": "To normalize database schemas", "correct": false }
+    }
+  },
+  "08_40": {
+    "question": "Which of the following best describes a data lake?",
+    "choices": {
+      "A": { "choice": "A visual representation of SQL queries", "correct": false },
+      "B": { "choice": "A highly normalized relational database", "correct": false },
+      "C": { "choice": "A repository storing structured, semi-structured, and unstructured data in raw form", "correct": true },
+      "D": { "choice": "A summary of aggregated reports", "correct": false }
+    }
+  },
+  "08_41": {
+    "question": "What is the purpose of creating multiple user accounts in MySQL?",
+    "choices": {
+      "A": { "choice": "To allow faster database backups", "correct": false },
+      "B": { "choice": "To share credentials among teams", "correct": false },
+      "C": { "choice": "To support auditing and reduce accidental changes", "correct": true },
+      "D": { "choice": "To increase connection pool size", "correct": false }
+    }
+  },
+  "08_42": {
+    "question": "Which MySQL command is used to grant permissions to a user?",
+    "choices": {
+      "A": { "choice": "<code>ALLOW</code>", "correct": false },
+      "B": { "choice": "<code>GIVE</code>", "correct": false },
+      "C": { "choice": "<code>PERMIT</code>", "correct": false },
+      "D": { "choice": "<code>GRANT</code>", "correct": true }
+    }
+  },
+  "08_43": {
+    "question": "What does the principle of least privilege aim to achieve?",
+    "choices": {
+      "A": { "choice": "Allow remote access to all users", "correct": false },
+      "B": { "choice": "Minimize user access to only necessary data", "correct": true },
+      "C": { "choice": "Improve system performance", "correct": false },
+      "D": { "choice": "Increase user concurrency", "correct": false }
+    }
+  },
+  "08_44": {
+    "question": "Which command is used to remove a user in MySQL?",
+    "choices": {
+      "A": { "choice": "<code>REMOVE USER</code>", "correct": false },
+      "B": { "choice": "<code>DELETE USER</code>", "correct": false },
+      "C": { "choice": "<code>DROP USER</code>", "correct": true },
+      "D": { "choice": "<code>CLEAR USER</code>", "correct": false }
+    }
+  },
+  "08_45": {
+    "question": "In trigger syntax, what does 'BEFORE INSERT' indicate?",
+    "choices": {
+      "A": { "choice": "The trigger will delete the inserted row", "correct": false },
+      "B": { "choice": "The trigger will run before a row is inserted", "correct": true },
+      "C": { "choice": "The trigger will run after a row is inserted", "correct": false },
+      "D": { "choice": "The trigger will rollback the insert operation", "correct": false }
+    }
+  },
+  "08_46": {
+    "question": "Which clause is used to create a user-defined function (UDF) in MySQL?",
+    "choices": {
+      "A": { "choice": "<code>DEFINE FUNCTION</code>", "correct": false },
+      "B": { "choice": "<code>CREATE FUNCTION</code>", "correct": true },
+      "C": { "choice": "<code>MAKE FUNCTION</code>", "correct": false },
+      "D": { "choice": "<code>INIT FUNCTION</code>", "correct": false }
+    }
+  },
+  "08_47": {
+    "question": "Which keyword is used in a UDF to return a value?",
+    "choices": {
+      "A": { "choice": "<code>RETURN</code>", "correct": true },
+      "B": { "choice": "<code>YIELD</code>", "correct": false },
+      "C": { "choice": "<code>SEND</code>", "correct": false },
+      "D": { "choice": "<code>GIVE</code>", "correct": false }
+    }
+  },
+  "08_48": {
+    "question": "What is a restriction of MySQL triggers?",
+    "choices": {
+      "A": { "choice": "They can nest other triggers", "correct": false },
+      "B": { "choice": "They should not use complex logic", "correct": true },
+      "C": { "choice": "They can call external scripts", "correct": false },
+      "D": { "choice": "They can be used on views", "correct": false }
+    }
+  },
+  "08_49": {
+    "question": "How can you check a user's current active role in MySQL?",
+    "choices": {
+      "A": { "choice": "<code>DISPLAY ROLE();</code>", "correct": false },
+      "B": { "choice": "<code>SELECT CURRENT_ROLE();</code>", "correct": true },
+      "C": { "choice": "<code>SHOW USER ROLE;</code>", "correct": false },
+      "D": { "choice": "<code>SELECT ACTIVE_ROLE();</code>", "correct": false }
+    }
+  },
+  "08_50": {
+    "question": "What command is used to refresh MySQL privileges manually?",
+    "choices": {
+      "A": { "choice": "<code>REFRESH USER;</code>", "correct": false },
+      "B": { "choice": "<code>RELOAD PRIVILEGES;</code>", "correct": false },
+      "C": { "choice": "<code>FLUSH USERS;</code>", "correct": false },
+      "D": { "choice": "<code>FLUSH PRIVILEGES;</code>", "correct": true }
+    }
+  }
+}
