@@ -1,0 +1,17 @@
+{
+  "modules": {
+    "midterm": [
+      "Database Systems",
+      "Data Models",
+      "Relational Database Model",
+      "Structured Query Language",
+      "Midterm Sample"
+    ],
+    "final": [
+      "Normalization", 
+      "Procedures and Cursors", 
+      "Final Sample"
+    ]
+  },
+  "cumulative": false
+}
